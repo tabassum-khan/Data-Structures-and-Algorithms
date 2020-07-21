@@ -23,9 +23,6 @@ The respository can be cloned or be downloaded as a zip file.
 
     * File -> Import -> Projects from or Archive -> Select Directory -> Select the Project -> Finish
 
-
-
->**How to contribute?** Report an issue to leave feedback, or submit a pull request.
    
 
 ## Important Resources
@@ -40,11 +37,12 @@ The respository can be cloned or be downloaded as a zip file.
   - [Data Structure](https://www.hackerearth.com/practice/data-structures/).
   - [Algorithm](https://www.hackerearth.com/practice/algorithms/).
 
-### Youtube Links:
+**Youtube Links:**
 
-[Algorithm Tutorials by Abdul Bari](https://youtu.be/0IAPZzGSbME). 
+   - [Algorithm Tutorials by Abdul Bari](https://youtu.be/0IAPZzGSbME). 
 
-[My Code School Data Structure Tutorial](https://youtu.be/92S4zgXN17o).
+   - [My Code School Data Structure Tutorial](https://youtu.be/92S4zgXN17o).
+
 
 ## Where to start?
 
@@ -82,7 +80,7 @@ The respository can be cloned or be downloaded as a zip file.
 - [Double Hashing]().
 
 
-## Hierarchial Data Structure
+## Hierarchial Data Structures
 
 ### Tree
 
@@ -94,7 +92,7 @@ The respository can be cloned or be downloaded as a zip file.
 - [Trie](). A special type of tree used to store associative data structures.
 
 
-### Graphs
+### Graph
 
 - [Graph]().
 - [BFS and DFS]().
