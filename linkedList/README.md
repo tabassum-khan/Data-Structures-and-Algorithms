@@ -23,7 +23,7 @@ class LinkedList {
         int data; 
         Node next;  
         Node(int d) {
-	          data = d; 
+	     data = d; 
         } 
     } 
 }
@@ -32,9 +32,9 @@ class LinkedList {
 **2. Insertion** 
 ```
 public void push(int new_data) { 
-        Node new_node = new Node(new_data); 
-        new_node.next = head; 
-        head = new_node; 
+    Node new_node = new Node(new_data); 
+    new_node.next = head; 
+    head = new_node; 
 } 
 ```
 
@@ -67,12 +67,12 @@ public void deleteNode(){
 **4. Traversal**
 ```
 public void printList(){ 
-        Node tnode = head; 
-        while (tnode != null) 
-        { 
-            System.out.print(tnode.data+" "); 
-            tnode = tnode.next; 
-        } 
+    Node tnode = head; 
+    while (tnode != null) 
+    { 
+       System.out.print(tnode.data+" "); 
+       tnode = tnode.next; 
+    } 
 } 
 ```
 	
