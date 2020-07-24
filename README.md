@@ -46,7 +46,7 @@ The respository can be cloned or be downloaded as a zip file.
 
 ## Where to start?
 
-[Beginner](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/beginner) - contains basic problems.
+[Array](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/array) - contains basic problems.
 
 [Linked List]()
 
@@ -58,6 +58,10 @@ The respository can be cloned or be downloaded as a zip file.
     
     
 ## Linear Data Structures
+
+### Array
+
+- [Introduction to Arrays](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/array)
 
 ### Stack - Last in First Out
 
