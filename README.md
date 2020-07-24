@@ -40,15 +40,14 @@ The respository can be cloned or be downloaded as a zip file.
 **Youtube Links:**
 
    - [Algorithm Tutorials by Abdul Bari](https://youtu.be/0IAPZzGSbME). 
-
    - [My Code School Data Structure Tutorial](https://youtu.be/92S4zgXN17o).
 
 
 ## Where to start?
 
-[Array](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/array) - contains basic problems.
+[Array](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/array).
 
-[Linked List]()
+[Linked List](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/linkedList).
 
 [Stacks](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/stacks).
 
