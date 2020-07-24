@@ -42,7 +42,7 @@ int[][] intArray = new int[10][20];
 int cloneArray[] = arr.clone();
 ```
 
-**6. Looping over an Array
+**6. Looping over an Array**
 ```
 for(int i=0; i<arr.length; i++){
 	System.out.println(arr[i]);
