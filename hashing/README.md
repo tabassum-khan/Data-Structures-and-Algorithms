@@ -22,12 +22,15 @@
 - A hash table is a data structure that is used to store keys/value pairs. 
 - It uses a hash function to compute an index into an array in which an element will be inserted or searched.
 
+##### [Design and Implementation of a simple hash table](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/hashing/simple_hashtable.md)
 
 ### Collision Resolution Techniques:
 
 **1. Separate chaining (open hashing):**
 
 In separate chaining, each element of the hash table is a linked list. To store an element in the hash table you must insert it into a specific linked list. If there is any collision (i.e. two different elements have same hash value) then store 	both the elements in the same linked list.
+
+##### [Design and Implementation of Separate Chaining](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/hashing/separate_chaining.md)
 
 **2. Linear probing (open addressing or closed hashing):**
 
@@ -41,6 +44,9 @@ The probe sequence is the sequence that is followed while traversing through ent
 > index = (index + 2) % hashTableSize
 >
 > index = (index + 3) % hashTableSize
+
+
+##### [Design and Implementation of Linear Probing](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/hashing/linear_probing.md)
 
 **3. Quadratic Probing:**
 
@@ -64,3 +70,5 @@ Double hashing is similar to linear probing and the only difference is the inter
 >
 > Here, indexH is the hash value that is computed by another hash function.
 
+
+##### [Design and Implementation of Quadratic Probing](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/hashing/quadratic_probing.md)
