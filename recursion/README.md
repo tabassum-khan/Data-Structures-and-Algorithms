@@ -71,4 +71,4 @@ class GFG{
 
 **The memory stack has been shown in below diagram:**
 
-![Recursion Memory Stack](/assets/recursion_daig.jpeg)
+![Recursion Memory Stack](/assets/recursion_diag.jpg)
