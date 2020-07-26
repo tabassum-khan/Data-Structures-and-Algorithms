@@ -54,7 +54,7 @@ Output:
 
 - But this simple program cannot handle collision techniques. We have already discussed various types of collision techniques in the Introductory read. Here, we will design and implement the code for all different types of collisin techniques.
 
-1. [Separate chaining (open hashing)]()
-2. [Linear probing (open addressing or closed hashing)] ()
-3. [Quadratic Probing]()
-4. [Double hashing]()
+1. [Separate chaining (open hashing)](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/hashing/separate_chaining.md)
+2. [Linear probing (open addressing or closed hashing)](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/hashing/linear_probing.md)
+3. [Quadratic Probing](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/hashing/quadratic_probing.md)
+4. [Double hashing](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/hashing/double_hashing.md)
