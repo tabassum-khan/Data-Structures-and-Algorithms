@@ -60,6 +60,10 @@ Quadratic probing is similar to linear probing and the only difference is the in
 > 
 > index = (index + 3^2) % hashTableSize
 
+
+##### [Design and Implementation of Quadratic Probing](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/hashing/quadratic_probing.md)
+
+
 **4. Double Hashing:**
 
 Double hashing is similar to linear probing and the only difference is the interval between successive probes. Here, the interval between probes is computed by using two hash functions.
@@ -71,4 +75,4 @@ Double hashing is similar to linear probing and the only difference is the inter
 > Here, indexH is the hash value that is computed by another hash function.
 
 
-##### [Design and Implementation of Quadratic Probing](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/hashing/quadratic_probing.md)
+##### [Design and Implementation of Double Hashing](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/hashing/double_hashing.md)
