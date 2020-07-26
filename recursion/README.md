@@ -4,8 +4,8 @@
 
 - Recursion is a process in which a function calls itself directly or indirectly. Recursion break down a complex problems into smaller subproblems to make it easier and simpler.
 - A recursive function has a:
-  - Base case: The function keeps calling itself until the base condition is true and the execution stops. The function returns to the previous stack. A recursive function can have multiple base cases.
-  - Recursive case: The function calls itself and can also have some other code.
+  - **Base case:** The function keeps calling itself until the base condition is true and the execution stops. The function returns to the previous stack. A recursive function can have multiple base cases.
+  - **Recursive case:** The function calls itself and can also have some other code.
       
 - Example:
  ```
@@ -59,5 +59,16 @@ class GFG{
 } 
 ```
 
-> Output: 3 2 1 1 2 3
+> **Output:** 3 2 1 1 2 3
 
+> **Explantion:**
+>
+> 1. When printFun(3) is called from main(), memory is allocated to printFun(3) and a local variable test is initialized to 3 and statement 1 to 4 are pushed on the stack as    shown in below diagram.
+> 2. It first prints ‘3’. In statement 2, printFun(2) is called and memory is allocated to printFun(2) and a local variable test is initialized to 2 and statement 1 to 4 are pushed in the stack. 
+> 3. Similarly, printFun(2) calls printFun(1) and printFun(1) calls printFun(0). printFun(0) goes to if statement and it return to printFun(1). 
+> 4. Remaining statements of printFun(1) are executed and it returns to printFun(2) and so on. 
+> 5. In the output, value from 3 to 1 are printed and then 1 to 3 are printed. 
+
+**The memory stack has been shown in below diagram:**
+
+![Recursion Memory Stack](/assets/recursion_daig.jpeg)
