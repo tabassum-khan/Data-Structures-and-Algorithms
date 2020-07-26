@@ -2,10 +2,10 @@
 
 ## Introduction
 
-- Recursion is a process in which a function calls itself directly or indirectly. Recursion break down a complex problems into smaller subproblems to make it easier and simpler.
+- Recursion is a process in which a function calls itself directly or indirectly. Recursion break down a complex problem into smaller subproblems to make it easier and simpler.
 - A recursive function has a:
   - **Base case:** The function keeps calling itself until the base condition is true and the execution stops. The function returns to the previous stack. A recursive function can have multiple base cases.
-  - **Recursive case:** The function calls itself and can also have some other code.
+  - **Recursive case:** The function calls itself and also has some code.
       
 - Example:
  ```
@@ -69,6 +69,6 @@ class GFG{
 > 4. Remaining statements of printFun(1) are executed and it returns to printFun(2) and so on. 
 > 5. In the output, value from 3 to 1 are printed and then 1 to 3 are printed. 
 
-**The memory stack has been shown in below diagram:**
+**The memory stack has been shown in the diagram below:**
 
 ![Recursion Memory Stack](/assets/recursion_diag.jpg)
