@@ -64,16 +64,18 @@ The respository can be cloned or be downloaded as a zip file.
 
 ### Stack - Last in First Out
 
+- [Introduction](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/stacks/).
 - [Implementing Stack using Array](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/stacks/StackArray.java).
 - [Implementing Stack using Linked List](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/stacks/StackLL.java).
 
 
 ### Queues - First in First Out
 
-- [Queue using Array]().
-- [Queue using Linked List]().
-- [Circular Queue]().
-- [Priority Queue](). A queue where the most important element is always at the front.
+- [Introduction](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/queues/).
+- [Queue using Array](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/queues/QueueArray.java).
+- [Queue using Linked List](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/queues/QueueLL.java).
+- [Circular Queue](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/queues/CircularQueue.java).
+- [Priority Queue](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/queues/PriorityQueues.java). A queue where the most important element is always at the front.
 
 ### Hashing
 
