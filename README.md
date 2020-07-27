@@ -90,9 +90,10 @@ The respository can be cloned or be downloaded as a zip file.
 
 ### Tree
 
+- [Tree](). Introduction to Trees.
 - [Binary Tree](). A tree where each node has at most two children.
 - [Binary Search Tree(BST)](). A binary tree that orders its nodes in a way that allows for fast queries.
-- [Augmented BST](). 
+- [Augmented Trees](). 
 - [Heap](). A binary tree stored in an array, so it doesn't use pointers. Makes a great priority queue.
 - [Trie](). A special type of tree used to store associative data structures.
 
