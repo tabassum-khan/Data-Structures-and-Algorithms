@@ -85,5 +85,7 @@ int rear(){
 }
 ```
 
+# Priority Queue
 
-	
+- Priority Queue is a special type of queue that is an application of heap data structure.
+- To know more about Prioirty Queues, go to : [Priority Queues](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/edit/master/queues/priority_queues.md)
