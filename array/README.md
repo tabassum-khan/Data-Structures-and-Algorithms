@@ -15,7 +15,7 @@
 	- In case of creation of objects (by new) , the actual objects are stored in heap segment. Since all arrays are objects in Java,  they are dynamically allocated. 
 
 
-##Design and Implementation
+## Design and Implementation
 
 **1. Declaring Array** - only a reference is created in Java
 ```
