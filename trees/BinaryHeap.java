@@ -12,7 +12,6 @@ public class BinaryHeap {
 	}
 	
 	public void maxHeapify (int[] arr, int i) {
-		System.out.println("In max heapify");
 		int left = (2*i) + 1;
 		int right = (2*i) + 2;
 		int largest = 0;
