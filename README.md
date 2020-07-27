@@ -60,7 +60,7 @@ The respository can be cloned or be downloaded as a zip file.
 
 ### Array
 
-- [Introduction to Arrays](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/array)
+- [Introduction to Arrays](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/array/)
 
 ### Stack - Last in First Out
 
@@ -79,17 +79,17 @@ The respository can be cloned or be downloaded as a zip file.
 
 ### Hashing
 
-- [Separate Chaining]().
-- [Linear Probing]().
-- [Quadratic Probing]().
-- [Double Hashing]().
+- [Hashing and HashTable Introduction](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/hashing/).
+- [Separate Chaining](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/hashing/SeparateChaining.java).
+- [Linear Probing](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/hashing/LinearProbing.java).
+- [Quadratic Probing](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/hashing/QuadraticProbing.java).
+- [Double Hashing](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/hashing/double_hashing.md).
 
 
 ## Hierarchial Data Structures
 
 ### Tree
 
-- [Tree](). A general-purpose tree structure.
 - [Binary Tree](). A tree where each node has at most two children.
 - [Binary Search Tree(BST)](). A binary tree that orders its nodes in a way that allows for fast queries.
 - [Augmented BST](). 
