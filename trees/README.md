@@ -23,7 +23,7 @@ A generic tree is shown in the figure below:
 
 > Here, 2 is a root node. 5, 11, and 4 are leaves. 2, 10 and 6 have the same parent node 7 and are the children of node 7. Hence, 2, 10, and 6 are also siblings.
 >
-> Here, Let A = Subtree[5, 9, and 4]. And B = subtree [7, 2, 10, 6, 5,. 11] . Both A and B are subtree of 2 and share the same parent 2. A and B are siblings.
+> Here, Let A = subtree [5, 9, and 4]. And B = subtree [7, 2, 10, 6, 5, 11] . Both A and B are subtree of 2 and share the same parent 2. A and B are siblings.
 
 
 ## Design and Implementation
