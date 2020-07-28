@@ -16,6 +16,8 @@
 5. **Siblings** : Elements that have same parent are called siblings.
 6. **Leaf Nodes** : The elements with no children are called leaves.
 7. **Subtree** : A subtree is a portion of a tree data structure that can be viewed as a complete tree in itself.
+8. **Depth of a node** : Number of edges from root to the node.
+9. **Height of a node** : Number of edges from the node to the deepest leaf. Height of the tree is the height of the root.
 
 A generic tree is shown in the figure below:
 
