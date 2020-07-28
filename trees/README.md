@@ -61,8 +61,8 @@ class Node
 
 There are a lot of different types of trees. Some of them are going to be discussed here.
 
-1. [Binary Tree]()
-2. [Binary Search Trees (BST)]()
-3. [Heap]()
-4. [Augmented Trees]()
-5. [Trie]()
+1. [Binary Tree](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/trees/binary_tree.md)
+2. [Binary Search Trees (BST)](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/trees/binary_search_tree.md)
+3. [Heap](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/trees/heap.md)
+4. [Augmented Trees](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/trees/augmented_tree.md)
+5. [Trie](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/trees/trie.md)
