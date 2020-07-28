@@ -32,7 +32,7 @@
 
 ## Types of Binary Trees
 
-#### Full Binary Tree
+#### 1. Full Binary Tree
 
 - A Binary Tree is a full binary tree if every node has 0 or 2 children. The following are the examples of a full binary tree. We can also say a full binary tree is a binary tree in which all nodes except leaf nodes have two children.
 - In a Full Binary Tree, number of leaf nodes is the number of internal nodes plus 1.
@@ -41,17 +41,17 @@
        > Where L = Number of leaf nodes, I = Number of internal nodes
        
        
-  #### Complete Binary Tree
+#### 2. Complete Binary Tree
   
   - A Binary Tree is a complete Binary Tree if all the levels are completely filled except possibly the last level and the last level has all keys as left as possible.
   
-  #### Perfect Binary Tree 
+#### 3. Perfect Binary Tree 
   
   - A Binary tree is a Perfect Binary Tree in which all the internal nodes have two children and all leaf nodes are at the same level.
   - A Perfect Binary Tree of height h (where height is the number of nodes on the path from the root to leaf) has **2^h – 1** node.
 
 
-#### Balanced Binary Tree
+#### 4. Balanced Binary Tree
 
 - A binary tree is balanced if the height of the tree is O(Log n) where n is the number of nodes. 
 - For Example, the AVL tree maintains O(Log n) height by making sure that the difference between the heights of the left and right subtrees is almost 1. 
@@ -59,7 +59,7 @@
 - Balanced Binary Search trees are performance-wise good as they provide O(log n) time for search, insert and delete.
 
 
-#### A degenerate (or pathological) tree 
+#### 5. A degenerate (or pathological) tree 
 
 - A Tree where every internal node has one child. Such trees are performance-wise same as linked list.
 
@@ -67,3 +67,68 @@
 ## Design and Implementation
 
 A full implementation of the binary tree is given [here](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/trees/BinaryTree.java)
+
+
+## Traversal
+
+There are mainly three types of tree traversals.
+
+#### 1. Pre-order traversal
+
+- In this traversal technique the traversal order is root-left-right i.e.
+
+    - Process data of root node
+    - First, traverse left subtree completely
+    - Then, traverse right subtree
+
+```
+void perorder(Node root){
+        if(root != null)
+        {
+            print(root.data);    //Printf root->data
+            preorder(root.left);    //Go to left subtree
+            preorder(root.right);     //Go to right subtree
+        }
+}
+```
+
+#### 2. Post-order traversal
+
+- In this traversal technique the traversal order is left-right-root.
+
+    - Process data of left subtree
+    - First, traverse right subtree
+    - Then, traverse root node
+
+```
+void postorder(Node root)
+    {
+        if(root != null)
+        {
+            postorder(root.left);    //Go to left sub tree
+            postorder(root.right);     //Go to right sub tree
+            print(root.data);    //Printf root->data
+        }
+    }
+```
+
+
+#### 3. In-order traversal
+
+- In in-order traversal, do the following:
+
+    - First process left subtree (before processing root node)
+    - Then, process current root node
+    - Process right subtree
+
+```
+void inorder(Node root)
+    {
+        if(root != null)
+        {
+            inorder(root.left);    //Go to left subtree
+            print(root.data);    //Printf root->data
+            inorder(root.right);     //Go to right subtree
+        }
+    }
+```
