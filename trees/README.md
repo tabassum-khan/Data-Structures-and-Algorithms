@@ -64,5 +64,5 @@ There are a lot of different types of trees. Some of them are going to be discus
 1. [Binary Tree](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/trees/binary_tree.md)
 2. [Binary Search Trees (BST)](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/trees/binary_search_tree.md)
 3. [Heap](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/trees/heap.md)
-4. [Augmented Trees](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/trees/augmented_tree.md)
+4. [Augmented Trees](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/trees/augmented_trees.md)
 5. [Trie](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/trees/trie.md)
