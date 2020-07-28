@@ -90,12 +90,12 @@ The respository can be cloned or be downloaded as a zip file.
 
 ### Tree
 
-- [Tree](). Introduction to Trees.
-- [Binary Tree](). A tree where each node has at most two children.
-- [Binary Search Tree(BST)](). A binary tree that orders its nodes in a way that allows for fast queries.
-- [Augmented Trees](). 
-- [Heap](). A binary tree stored in an array, so it doesn't use pointers. Makes a great priority queue.
-- [Trie](). A special type of tree used to store associative data structures.
+- [Tree](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/trees). Introduction to Trees.
+- [Binary Tree](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/binary_tree.md). A tree where each node has at most two children.
+- [Binary Search Tree(BST)](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/binary_search_tree). A binary tree that orders its nodes in a way that allows for fast queries.
+- [Augmented Trees](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/trees/augmented_trees.md). 
+- [Heap](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/trees/heap.md). A binary tree stored in an array, so it doesn't use pointers. Makes a great priority queue.
+- [Trie](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/trees/trie.md). A special type of tree used to store associative data structures.
 
 
 ### Graph
