@@ -15,4 +15,4 @@
 
 ## Design and Implementation
 
-A full implementation of the binary tree is given [here](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/trees/BinarySearchTree.java)
+A full implementation of the binary tree is given [here](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/trees/BST.java)
