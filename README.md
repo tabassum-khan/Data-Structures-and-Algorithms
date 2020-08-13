@@ -29,7 +29,7 @@ The respository can be cloned or be downloaded as a zip file.
 
 [Codechef CCDSAP Syllabus](https://www.codechef.com/certification/data-structures-and-algorithms/prepare). A syllabus to prepare to get certified in DSA by Codechef.
 
-[GeeksforGeeks Gate Syllabus for Data Structures and Algorithms](https://www.geeksforgeeks.org/gate-cs-notes-gq/). Section 3: Algorithms, Section 4: Programming and Data Structures
+[GeeksforGeeks Gate Syllabus for Data Structures and Algorithms](https://www.geeksforgeeks.org/gate-cs-notes-gq/) --> Section 3: Algorithms, Section 4: Programming and Data Structures
 
 **HackerEarth Tutorials and Problems:**
 
@@ -100,30 +100,30 @@ The respository can be cloned or be downloaded as a zip file.
 
 ### Graph
 
-- [Graph]().
-- [BFS and DFS]().
-- [Graph using Adajcency List]().
-- [Graph using HashSets]().
+- [Graph](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/graphs). Introduction to Graphs.
+- [BFS and DFS](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/graphs/BFS_DFS.java).
+- [Graph using Adajcency List](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/graphs/AdjacencyList.java).
+- [Graph using HashSets](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/graphs/Graph_SetsandHash.java).
 
 
 ## Algorithms
 
 ### Sorting
 
-Basic Sorts:
+**1. Basic Sorts:**
 
   - [Insertion Sort]().
   - [Bubble Sort]().
   - [Selection Sort]().
 
-Fast Sorts:
+**2. Fast Sorts:**
 
   - [Merge Sort](). 
   - [Quick Sort]().
   - [Hoare Quick Sort]().
   - [Heap Sort]().
   
-Special Purpose Sorts:
+**3. Special Purpose Sorts:**
 
 - [Counting Sort]().
 - [Radix Sort]().
