@@ -91,8 +91,8 @@ The respository can be cloned or be downloaded as a zip file.
 ### Tree
 
 - [Tree](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/trees). Introduction to Trees.
-- [Binary Tree](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/binary_tree.md). A tree where each node has at most two children.
-- [Binary Search Tree(BST)](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/binary_search_tree). A binary tree that orders its nodes in a way that allows for fast queries.
+- [Binary Tree](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/trees/master/binary_tree.md). A tree where each node has at most two children.
+- [Binary Search Tree(BST)](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/trees/master/binary_search_tree). A binary tree that orders its nodes in a way that allows for fast queries.
 - [Augmented Trees](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/trees/augmented_trees.md). 
 - [Heap](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/trees/heap.md). A binary tree stored in an array, so it doesn't use pointers. Makes a great priority queue.
 - [Trie](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/trees/trie.md). A special type of tree used to store associative data structures.
@@ -107,6 +107,14 @@ The respository can be cloned or be downloaded as a zip file.
 
 
 ## Algorithms
+
+Different problems require the use of different kinds of techniques. A good programmer uses all these techniques based on the type of problem. Some commonly-used techniques are:
+
+1. **Divide and conquer**
+2. **Randomized algorithms**
+3. **Greedy algorithms (This is not an algorithm, it is a technique.)**
+4. **Dynamic programming**
+
 
 ### Sorting
 
@@ -153,13 +161,15 @@ The respository can be cloned or be downloaded as a zip file.
 
 ### Greedy Algorithm
 
-- [Activity Selection Problem]().
-- [Job Sequencing]().
-- [Optimal Merge Pattern]().
-- [Huffman Coding]().
-- [Fractional Knapsack]().
-- [Egyptian Fraction]().
-- [Bracket Balancing]().
+- [Introduction](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/greedyAlgo).
+- [Activity Selection Problem](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/greedyAlgo/activity_selection.md).
+- [Job Sequencing](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/greedyAlgo/job_sequencing.md).
+- [Job Sequencing - Loss Minimisation](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/greedyAlgo/job_sequencing_loss_minimisation.md).
+- [Optimal Merge Pattern](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/greedyAlgo/optimal_merge_pattern.md).
+- [Huffman Coding](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/greedyAlgo/huffman_coding.md).
+- [Fractional Knapsack](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/greedyAlgo/fractional_knapsack.md).
+- [Egyptian Fraction](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/greedyAlgo/egyptian_fraction.md).
+- [Bracket Balancing](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/greedyAlgo/bracket_balancing.md).
 
 
 ## Useful Information
