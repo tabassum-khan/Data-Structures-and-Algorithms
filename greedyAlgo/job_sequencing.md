@@ -25,13 +25,10 @@ Given an array of jobs where every job has a deadline and associated profit if t
 
 **To solve the job sequencing problem via greedy method follow this steps:**
 
-> Sort all jobs in decreasing order of profit.
->
-> Initialize the result sequence as first job in sorted jobs.
->
-> Do following for remaining n-1 jobs.
-> 
-> If the current job can fit in the current result sequence without missing the deadline, add current job to the result. Else ignore the current job.
+1. Sort all jobs in decreasing order of profit.
+2. Initialize the result sequence as first job in sorted jobs.
+3. Do following for remaining n-1 jobs.
+4. If the current job can fit in the current result sequence without missing the deadline, add current job to the result. Else ignore the current job.
 
 
 ## Design and Implementation
