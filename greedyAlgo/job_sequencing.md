@@ -12,7 +12,7 @@ Given an array of jobs where every job has a deadline and associated profit if t
 
 **Lets take one example:**
 
-![Job Sequencing](/assets/job_sequencing.jpeg)
+![Job Sequencing](/assets/job_sequencing.png)
 
 **Solution:**
 > A simple solution is to generate all subsets of given set of jobs and check individual subset for feasibility of jobs in that subset. 
@@ -21,7 +21,7 @@ Given an array of jobs where every job has a deadline and associated profit if t
 >
 > We can also solve this problem using greedy method which is more optimal than simple solution.So lets solve this problem via greedy method.
 
-![Job Sequencing Problem2](/assets/job_sequencing2.jpg)
+![Job Sequencing Problem2](/assets/job_sequencing2.png)
 
 **To solve the job sequencing problem via greedy method follow this steps:**
 
