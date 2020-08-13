@@ -65,7 +65,7 @@ Given n number of sorted files, the task is to find the minimum computations don
 
 ## Design and Implementation
 
-Here is a full implementation of [Optimal Merge Patter](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/greedyAlgo/OptimalMergePattern.java).
+Here is a full implementation of [Optimal Merge Pattern](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/greedyAlgo/OptimalMergePattern.java).
 
 
 
