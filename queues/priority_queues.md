@@ -115,7 +115,3 @@ int delete_maximum (int Arr[ ])
     return max;
 }
 ```
-
-
-
-
