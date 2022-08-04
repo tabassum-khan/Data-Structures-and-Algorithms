@@ -1,0 +1,177 @@
+# **Two Sum**
+
+## Question:
+
+> 
+> 
+> 
+> Given an array of integers `nums` and an integer `target`, return *indices of the two numbers such that they add up to `target`*.
+> 
+> You may assume that each input would have ***exactly* one solution**, and you may not use the *same* element twice.
+> 
+> You can return the answer in any order.
+> 
+
+**Example 1:**
+
+```
+Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+
+```
+
+**Example 2:**
+
+```
+Input: nums = [3,2,4], target = 6
+Output: [1,2]
+
+```
+
+**Example 3:**
+
+```
+Input: nums = [3,3], target = 6
+Output: [0,1]
+
+```
+
+**Constraints:**
+
+- `2 <= nums.length <= 104`
+- `109 <= nums[i] <= 109`
+- `109 <= target <= 109`
+- **Only one valid answer exists.**
+
+**Follow-up:**
+
+Can you come up with an algorithm that is less than O(n^2) time complexity?
+
+---
+
+## Solution 1 : Brute Force-Iterative → O(n^2) /O(1)
+
+```java
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                if (nums[j] == target - nums[i]) {
+                    return new int[] { i, j };
+                }
+            }
+        }
+        // In case there is no solution, we'll just return null
+        return null;
+    }
+}
+```
+
+### Explanation:
+
+<aside>
+💡 1. The brute force approach is simple. 
+2. Loop through each element x and find if there is another value that equals to target - x*.*
+
+</aside>
+
+---
+
+## Solution 2 : Sorting and two Pointers → O(nLogn) /O(1)
+
+```java
+class Solution {
+    public int[] twoSum(int[] nums, int target) {      
+        Arrays.sort(nums);
+
+        int left = 0;
+        int right = nums.length - 1;
+
+        while (left < right) {
+            int sum = left[i] + right[j];
+
+            if (sum == target) {
+                return new int[] {left, right};
+            } else if (sum < target) {
+                left++;
+            } else {
+                right--;
+            }
+        }        
+        return null;
+    }
+}
+```
+
+### Explanation:
+
+<aside>
+💡
+
+- Sort the given array
+- Walk two indices `i` and `j` inward from both ends of the array. While `i` is still less than `j`, calculate the sum `s` of their corresponding elements. If `s` equals to the given `k` then return `true` and exit the algorithm immediately. If `s` is less than `k`, increases `i` by 1, otherwise decreases `j` by 1
+- Finally, return `false` as no pair has a sum equal to `k`
+</aside>
+
+---
+
+## Solution 3 : ****Hash Table**** → O(n) /O(n)
+
+```java
+class Solution {
+    public int[] twoSum(int[] nums, int target) {      
+        HashMap <Integer, Integer> map = new HashMap<Integer, Integer>();
+        
+        for(int i=0; i<nums.length; i++){
+            int num = nums[i]; // In this case 
+            
+            if (!map.containsKey(num))
+                map.put(nums[i], i);
+            int rem = target - nums[i];
+            
+            if(map.containsKey(rem) && map.get(rem) != i)
+                return new int[] {i,map.get(rem)};
+        }
+        
+        return null;
+    }
+}
+```
+
+### Explanation:
+
+<aside>
+💡 1. Here, we create a hashtable and we start inserting the numbers along with their indices into it if they didn’t exist previously.
+2. We then check if we can find the complement in the hashtable which does not equal to same index as that of the current element. If it exists, we return the indices of the current element and that of the complement.
+Below solution provides a refined version of this solution.
+
+</aside>
+
+---
+
+```java
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        Map<Integer, Integer> map = new HashMap<>(); //HashMap maintains only unique and distinct keys
+
+        for (int i = 0; i < nums.length; i++) {
+            int complement = target - nums[i];
+            if (map.containsKey(complement)) {
+                return new int[] { map.get(complement), i };
+            }
+            map.put(nums[i], i); //if key already exists, then it will replace the value with the latest index.
+        }
+        
+        return null;
+    }
+}
+```
+
+### Explanation:
+
+<aside>
+💡 1. While we are iterating and inserting elements into the hash table, we also look back to check if current element's complement already exists in the hash table. 
+2. If it exists, we have found a solution and return the indices immediately.
+
+</aside>
