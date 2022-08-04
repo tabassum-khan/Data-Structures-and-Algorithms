@@ -47,4 +47,6 @@ int cloneArray[] = arr.clone();
 for(int i=0; i<arr.length; i++){
 	System.out.println(arr[i]);
 ```
+
+## [Problems to Solve](https://www.notion.so/Array-6bc9e449e7f64d18a3265dd75ef5789a)
 	
