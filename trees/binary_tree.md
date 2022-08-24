@@ -86,6 +86,7 @@ class TreeNode
     }
 
 	public TreeNode(){
+		left = right = null;
 	}
 }
 TreeNode root;
