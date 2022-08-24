@@ -2,19 +2,17 @@
 
 ## **Introduction**
 
-> 
-> 
-> - **The variables in the array are ordered (contiguous), having an index beginning from 0.**
-> - Java array can be also be used as a static field, a local variable or a method parameter.
-> - The **array size** must be an integer constant, greater than zero.
-> - Multidimensional arrays are arrays of arrays with each element of the array holding the reference of the other array. These are also known as Jagged Arrays.
-> - **Memory Allocation:**
->     - In case of primitives data types, the actual values are stored in contiguous memory locations.
->     - In case of creation of objects (by `new`) , the actual objects are stored in heap segment. Since all arrays are objects in Java, they are allocated in the heap memory of JVM.
->         
->         *(For more insights on Java Memory Allocation → [Memory Allocation in Java](https://www.notion.so/Memory-Allocation-in-Java-c45580c5299e4264bbabb45daad32e77))*
->         
->     - The memory isn’t allocated to an object at declaration( `int[] arr` ) but only a reference is created. For the memory allocation of the object, `new` is used, so the object is allocated memory on the heap (`int[] arr = new int[20];`).
+- **The variables in the array are ordered (contiguous), having an index beginning from 0.**
+- Java array can be also be used as a static field, a local variable or a method parameter.
+- The **array size** must be an integer constant, greater than zero.
+- Multidimensional arrays are arrays of arrays with each element of the array holding the reference of the other array. These are also known as Jagged Arrays.
+- **Memory Allocation:**
+    - In case of primitives data types, the actual values are stored in contiguous memory locations.
+    - In case of creation of objects (by `new`) , the actual objects are stored in heap segment. Since all arrays are objects in Java, they are allocated in the heap memory of JVM.
+        
+        *(For more insights on Java Memory Allocation → [Memory Allocation in Java](https://www.notion.so/Memory-Allocation-in-Java-c45580c5299e4264bbabb45daad32e77))*
+        
+    - The memory isn’t allocated to an object at declaration( `int[] arr` ) but only a reference is created. For the memory allocation of the object, `new` is used, so the object is allocated memory on the heap (`int[] arr = new int[20];`).
 
 
 ## **Design and Implementation**
@@ -67,7 +65,7 @@ arr = null;
 
 ## [Problems to Solve](https://www.notion.so/Array-6bc9e449e7f64d18a3265dd75ef5789a)
 
-### EASY
+#### EASY
 [**1. Two Sum**](https://www.notion.so/Two-Sum-7de5bfc6a9e84770815a15a7baba705b)
 
 [**2. Contains Duplicate**](https://www.notion.so/Contains-Duplicate-7ef46634b4f841c19fac5e9a8d69caa9)
@@ -75,7 +73,7 @@ arr = null;
 [**3. Best Time to Buy and Sell Stock**](https://www.notion.so/Best-Time-to-Buy-and-Sell-Stock-56915dac97ec48cbb2ee22ba7040a10b)
 
 
-### MEDIUM
+#### MEDIUM
 [**4. Product of Array Except Self**](https://www.notion.so/Product-of-Array-Except-Self-e283fe836436453eb09d84f20b46462d)
 
 [**5. Maximum Subarray**](https://www.notion.so/Maximum-Subarray-3647ae03bc8044549bdab2b620a6a5bc)
