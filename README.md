@@ -64,7 +64,11 @@ The respository can be cloned or be downloaded as a zip file.
 
 ### Linked List
 
-- [Introduction to Linked List](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/linkedList).
+- [Introduction to Linked List](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/linkedList)
+
+### String
+
+- [Introduction to String](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/String)
 
 ### Stack - Last in First Out
 
