@@ -60,11 +60,11 @@ The respository can be cloned or be downloaded as a zip file.
 
 ### Array
 
-- [Introduction to Arrays](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/array/)
+- [Introduction to Array](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/array/)
 
 ### Linked List
 
-- [Linked List](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/linkedList).
+- [Introduction to Linked List](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/linkedList).
 
 ### Stack - Last in First Out
 
