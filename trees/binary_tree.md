@@ -1,6 +1,8 @@
 # Binary Tree
 💡 *On Notion → [Binary Tree](https://www.notion.so/Binary-Tree-8745e2f18f8e4005ae54e308fd0afec8)*
 
+$\sqrt{3x-1}+(1+x)^2$
+
 ## **Introduction**
 A binary tree is a hierarchical data structure in which each node has at most two children generally referred as left child and right child.
 
@@ -17,7 +19,7 @@ The topmost node in the tree is called the root. An empty tree is represented by
 ![Binary Tree Representation](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/raw/master/assets/binary_tree.png)
 
 ## **Properties**
-1. The maximum number of nodes at level $‘l’$ of a binary tree is $(2^l = 0)$. For root, $l = 0$, number of nodes = $2^0 = 1.$
+1. The maximum number of nodes at level $‘l’$ of a binary tree is $2^l$. For root, $l = 0$, number of nodes = $2^0 = 1.$
 2. Maximum number of nodes in a binary tree of height $‘h’$ is $**2^h – 1**$. When height of the root is considered as 0, in this convention, the above formula becomes $**2^h+ 2^1 -1$.**
 3. In a Binary Tree with N nodes, minimum possible height or minimum number of levels is $**log(N+1)**$.
 4. A Binary Tree with L leaves has at least $**log(L) + 1**$ levels.
