@@ -74,6 +74,7 @@ Hence, It is preferred to use String literals as it allows JVM to optimize the m
 **Methods of StringBuffer class**
 
 | Methods | Action Performed |
+| ------- | ---------------- | 
 | append() | Used to add text at the end of the existing text. |
 | length() | The length of a StringBuffer can be found by the length( ) method |
 | capacity() | the total allocated capacity can be found by the capacity( ) method |
@@ -142,6 +143,7 @@ Where possible, it is recommended that this class be used in preference to Strin
 **Methods of StringBuilder class:**
 
 | Method | Description |
+| ------- | ---------------- | 
 | public StringBuilder append(String s) | It is used to append the specified string with this string. The append() method is overloaded like append(char), append(boolean), append(int), append(float), append(double) etc. |
 | public StringBuilder insert(int offset, String s) | It is used to insert the specified string with this string at the specified position. The insert() method is overloaded like insert(int, char), insert(int, boolean), insert(int, int), insert(int, float), insert(int, double) etc. |
 | public StringBuilder replace(int startIndex, int endIndex, String str) | It is used to replace the string from specified startIndex and endIndex. |
