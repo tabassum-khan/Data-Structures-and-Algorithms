@@ -1,4 +1,5 @@
 # Heap
+>💡 On Notion → [Heap](https://www.notion.so/Heap-318dce4174c842f0a8ab23eb34f8d863)
 ## **Introduction**
 
 - A heap is a specific tree based data structure in which all the nodes of tree are in a specific order. They are hierarchical data structure.
@@ -30,9 +31,10 @@
     
     > Note : The indexing starts from 1 and not 0 to make indexing easier.
     > 
-    > 1. Left child : $**2*i**$
-    > 2. Right child : $**2*i + 1**$
-    > 3. Parent : $i/2$
+    > 1. Left child : 2*i
+    > 2. Right child : 2*i + 1
+    > 3. Parent : i/2
+    
 - **Applications**
     - 1. [Heap Sort](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/trees.heap_sort.md)
     - 2. [Priority Queues](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/queues/priority_queues.md)
@@ -42,9 +44,11 @@
 If we are going to implement binary heap, we will either implement a max heap or a min heap. We will see both of those implementation.
 
 - The binary Heap will be created with the help of an array and its capacity and size will be declared.
-`private[] int heap;`
-`private int capacity;
- private int size;`
+    ```java
+    private[] int heap;
+    private int capacity;
+    private int size;
+    ```
 
 ### Operations on Binary Heap
 
@@ -57,13 +61,13 @@ If we are going to implement binary heap, we will either implement a max heap or
     public class BinaryHeap {
         private int[] heap;
         private int size;
-    		private int capacity;
+        private int capacity;
          
         // initialise heap
         public BinaryHeap(int capacity){
             this.size = 0;
             heap = new int[ capacity+1];
-    				this.capacity = capacity;
+    		this.capacity = capacity;
         }
     
         public boolean isEmpty(){
@@ -74,10 +78,10 @@ If we are going to implement binary heap, we will either implement a max heap or
             return size == capacity;
         }
     		
-    		public heapify(int[] heap, int index, int size){...}
-    		public void insert(int key){..}
-    		public getMin(){...}
-    		public int extractMin(int[] heap){...}
+    	public heapify(int[] heap, int index, int size){...}
+    	public void insert(int key){..}
+    	public getMin(){...}
+    	public int extractMin(int[] heap){...}
     }
     ```
     
@@ -95,16 +99,16 @@ If we are going to implement binary heap, we will either implement a max heap or
     
     ```java
     public void insert(int element){
-    	if (isFull())
-    	  return;
+        if (isFull())
+            return;
     
-    	 heap[++size] = element;
-       int current = size;
+    	heap[++size] = element;
+        int current = size;
      
-       while (heap[current] < heap[current/2]) {
-    	   swap(current, current/2);
-         current = current/2;
-       }
+        while (heap[current] < heap[current/2]){
+            swap(current, current/2);
+            current = current/2;
+        }
     }
     ```
     
@@ -117,7 +121,7 @@ If we are going to implement binary heap, we will either implement a max heap or
     
     ```java
     public int getMin(){
-    		return heap[1];
+        return heap[1];
     }
     ```
     
@@ -132,7 +136,7 @@ If we are going to implement binary heap, we will either implement a max heap or
     
     ```java
     public int extractMin(int[] heap){ 
-          // Get the last element and decrease size
+        // Get the last element and decrease size
         int lastElement = arr[size--];
     
         // Replace root with last element 
@@ -140,7 +144,7 @@ If we are going to implement binary heap, we will either implement a max heap or
       
         // heapify the root node 
         min_heapify(heap, 1, size); 
-    
+        
         return lastElement; 
     }
     ```
@@ -188,13 +192,12 @@ If we are going to implement binary heap, we will either implement a max heap or
 - If we start from `index=1` , then we start from the first element and adjust it and we do this till the last element including leaf nodes. But, if you observe carefully, you will find that as you adjust from top to bottom, the leaf node automatically adjust themselves. Another way to think is that the leaf nodes have no children to compare themselves with. Hence, we only need to check till the level above leaf nodes.
 - A N element heap stored in an array will have leaves indexed by N/2+1, N/2+2 , N/2+3 …. upto N. Hence, we ony have to iterate `min_heapify()` from `index=1` to `index=N/2`.
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d94cdfca-bca1-4822-80a5-1a9a012efc50/Untitled.png)
+    ![Heap leafnodes](/assets/heap image.jpg)
     
     ```java
-    void build_minheap (int heap[]) 
-    {
+    void build_minheap (int heap[]) {
         for( int i=1 ; i <= size/2 ; i++)
-    		    min_heapify (heap, i, size);
+    	    min_heapify (heap, i, size);
     }
     ```
     
@@ -214,16 +217,15 @@ If we are going to implement binary heap, we will either implement a max heap or
     
     ```java
     public void insert(int element){
-    	if (isFull())
-    	  return;
-    
-    	 heap[++size] = element;
-       int current = size;
+        if (isFull())
+    	    return;
+        heap[++size] = element;
+        int current = size;
      
-       while (heap[current] > heap[current/2]) {
-    	   swap(current, current/2);
-         current = current/2;
-       }
+        while (heap[current] > heap[current/2]) {
+    	    swap(current, current/2);
+            current = current/2;
+        }
     }
     ```
     
@@ -236,7 +238,7 @@ If we are going to implement binary heap, we will either implement a max heap or
     
     ```java
     public int getMax(){
-    		return heap[1];
+        return heap[1];
     }
     ```
     
@@ -308,8 +310,7 @@ If we are going to implement binary heap, we will either implement a max heap or
 - A N element heap stored in an array will have leaves indexed by N/2+1, N/2+2 , N/2+3 …. upto N. Hence, we ony have to iterate `max_heapify()` from `index=1` to `index=N/2`.
     
     ```java
-    void build_maxheap (int heap[])
-    {
+    void build_maxheap (int heap[]){
         for(int i = size/2 ; i >= 1 ; i-- )
             max_heapify (heap, i, size) ;
     }
