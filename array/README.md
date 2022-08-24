@@ -1,3 +1,21 @@
+## **ntroduction**
+
+> 
+> 
+> - **The variables in the array are ordered (contiguous), having an index beginning from 0.**
+> - Java array can be also be used as a static field, a local variable or a method parameter.
+> - The **array size** must be an integer constant, greater than zero.
+> - Multidimensional arrays are arrays of arrays with each element of the array holding the reference of the other array. These are also known as Jagged Arrays.
+> - **Memory Allocation:**
+>     - In case of primitives data types, the actual values are stored in contiguous memory locations.
+>     - In case of creation of objects (by `new`) , the actual objects are stored in heap segment. Since all arrays are objects in Java, they are allocated in the heap memory of JVM.
+>     
+>     *(For more insights on Java Memory Allocation →* [Memory Allocation in Java](https://www.notion.so/Memory-Allocation-in-Java-77ea6ef1bfeb4696bdec18fe759c9c35)*)*
+>     
+>     - The memory isn’t allocated to an object at declaration( `int[] arr` ) but only a reference is created. For the memory allocation of the object, `new` is used, so the object is allocated memory on the heap (`int[] arr = new int[20];`).
+
+
+
 # Array
 
 ## Introduction
