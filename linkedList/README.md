@@ -1,11 +1,12 @@
 # Linked List
-
-## Introduction
 >💡 On Notion → [Linked List](https://www.notion.so/Linked-List-eeff5bf5462d4c05896e98af41da2873)
+>
+## Introduction
 
 - A linked list is a linear data structure, in which the elements are not stored at contiguous memory locations.. The elements in a linked list are linked using pointers.
 
-![Representation of Singly Linked List](https://www.notion.so/Linked-List-eeff5bf5462d4c05896e98af41da2873#c922c709c8144787be967a902262ad05)
+![Singly Linked List](https://user-images.githubusercontent.com/22317530/186352508-8de94f9a-36e3-4d36-9cb2-92eab9e2966a.png)
+
 
 - **Advantages over arrays:**
     - Dynamic size
@@ -90,3 +91,24 @@ public void printList(Node head){
     } 
 }
 ```
+
+## Problems to Solve
+>💡 On Notion → [Problems on Linked List](https://www.notion.so/3be9e3ea14374f51ac05b69ee78f4b7c)
+
+#### EASY
+[1. Reverse a Linked List](https://www.notion.so/Reverse-a-Linked-List-7ebc6aece981432c816449f8c1c8458d)
+
+[2. Detect a cycle in a Linked List](https://www.notion.so/Detect-a-cycle-in-a-Linked-List-26eb374edceb4c3da11ae9ac54f08280)
+
+[3. Merge Two Sorted Lists](https://www.notion.so/Merge-Two-Sorted-Lists-4a84f64816aa47c4a4b648933e83b889)
+
+
+#### MEDIUM
+[4. Remove Nth Node From End of List](https://www.notion.so/Remove-Nth-Node-From-End-of-List-6b2592c26c6f47378e99fefe225e7e0f)
+
+[5. Reorder List](https://www.notion.so/Reorder-List-9aadf4247afc44d19e9eb595507ea6a2)
+
+
+#### HARD
+
+[6. Merge K Sorted Lists](https://www.notion.so/Merge-K-Sorted-Lists-d7ff29f09c7441a892732f3b59779c23)
