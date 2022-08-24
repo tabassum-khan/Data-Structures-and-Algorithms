@@ -41,18 +41,18 @@ TreeNode root;
 
 ```java
 public TreeNode insert (TreeNode temp, int data) {
-		//if root is empty
-		if (temp == null) {
-			temp = new TreeNode (data);
-			return temp;
-		}
-		
-		if (data < temp.data)
-			temp.left = insert (temp.left, data);
-		else if (data > temp.data)
-			temp.right = insert (temp.right, data);
-		
+	//if root is empty
+	if (temp == null) {
+		temp = new TreeNode (data);
 		return temp;
+	}
+		
+	if (data < temp.data)
+		temp.left = insert (temp.left, data);
+	else if (data > temp.data)
+		temp.right = insert (temp.right, data);
+		
+	return temp;
 }
 ```
 
@@ -64,15 +64,14 @@ public TreeNode insert (TreeNode temp, int data) {
 
 ```java
 public TreeNode searchNode(TreeNode temp, TreeNode prev, int data) {
-		
-		if (temp == null || temp.data == data) {
-			return temp;
-		}
-		else if (data < temp.data)
-			return searchNode(temp.left, temp, data);
-		else
-			return searchNode(temp.right, temp, data);
+	if (temp == null || temp.data == data) {
+		return temp;
 	}
+	else if (data < temp.data)
+		return searchNode(temp.left, temp, data);
+	else
+		return searchNode(temp.right, temp, data);
+}
 ```
 
 ### Delete a Node
@@ -116,38 +115,37 @@ public TreeNode searchNode(TreeNode temp, TreeNode prev, int data) {
 
 ```java
 public TreeNode deleteNode (TreeNode temp, int data) {
-		//if the tree is empty
-		if (temp == null)
-			return temp;
-		else if (data < temp.data)
-			temp.left = deleteNode(temp.left, data);
-		else if (data > temp.data)
-			temp.right = deleteNode(temp.right, data);
-		
-		//temp will be at the node that is to be deleted;
-		else {
-			
-			//0 or 1 child
-			if (temp.left == null)
-				return temp.right;
-			else if (temp.right == null)
-				return temp.left;
-			
-			//2 children
-			temp.data = maxValue (temp.left); //replace the node value with the max value 
-			temp.left = deleteNode(temp.left, temp.data); //delete the inorder successor
-		}
-		
+	//if the tree is empty
+	if (temp == null)
 		return temp;
+	else if (data < temp.data)
+		temp.left = deleteNode(temp.left, data);
+	else if (data > temp.data)
+		temp.right = deleteNode(temp.right, data);
+	
+	//temp will be at the node that is to be deleted;
+	else {
+		
+		//0 or 1 child
+		if (temp.left == null)
+			return temp.right;
+		else if (temp.right == null)
+			return temp.left;
+		
+		//2 children
+		temp.data = maxValue (temp.left); //replace the node value with the max value 
+		temp.left = deleteNode(temp.left, temp.data); //delete the inorder successor
 	}
+		
+	return temp;
+}
 
-	// traverse the right subtree
-	public int maxValue (TreeNode temp) {
-		while (temp.right !=null)
-			temp = temp.right;
-
-		return temp.right.data;;
-	}
+// traverse the right subtree
+public int maxValue (TreeNode temp) {
+	while (temp.right !=null)
+		temp = temp.right;
+	return temp.right.data;;
+}
 ```
 
 **Optimization to above code for two children case :**
@@ -156,50 +154,51 @@ public TreeNode deleteNode (TreeNode temp, int data) {
 
 ```java
 public TreeNode deleteNode (TreeNode temp, int data) {
-		//if the tree is empty
-		if (temp == null)
-			return temp;
-		else if (data < temp.data)
-			temp.left = deleteNode(temp.left, data);
-		else if (data > temp.data)
-			temp.right = deleteNode(temp.right, data);
-		
-		//temp will be at the node that is to be deleted;
-		else {
-			
-			//0 or 1 child
-			if (temp.left == null)
-				return temp.right;
-			else if (temp.right == null)
-				return temp.left;
-			
-			//2 children
-			else{
-				TreeNode succParent = temp;
-				TreeNode succ = temp.left;
-				
-                //find the maximum in the left subtree
-				while(succ.right != null){
-						succParent = succ;
-						succ = succ.right;
-				}		
-
-              //If we have the right successor in the left subtree, then we know that, the successor right will be null since it is the maximum value. Hence, link the                 right of the succParent to the left of the successor. Thereby deleting the successor but not its left subtree if it has any.
-              //But if we do not have a successor and succParent is temp itself, then it means that succ does not have a right child. And hence, we can safely link the                 left of the succParent to the left of the succ. Now, in this case, succ node is not linked to the tree anymore but this not the node to be deleted. The                 node to be deleted is succParent. Hence, replace succParent with succ.
-				
-                if(succParent != temp)
-						succParent.right = succ.left;
-				else
-						succParent.left = succ.left;
-				temp.key = succ.key; 									
-			}
-		}
-		
+	//if the tree is empty
+	if (temp == null)
 		return temp;
-	}  {
-            inorder(root.left);    //Go to left subtree
-            print(root.data);    //Printf root->data
-            inorder(root.right);     //Go to right subtree
-        }
-    }
+	else if (data < temp.data)
+		temp.left = deleteNode(temp.left, data);
+	else if (data > temp.data)
+		temp.right = deleteNode(temp.right, data);
+		
+	//temp will be at the node that is to be deleted;
+	else {
+		
+		//0 or 1 child
+		if (temp.left == null)
+			return temp.right;
+		else if (temp.right == null)
+			return temp.left;
+			
+		//2 children
+		else{
+			TreeNode succParent = temp;
+			TreeNode succ = temp.left;
+				
+	               //find the maximum in the left subtree
+			while(succ.right != null){
+				succParent = succ;
+				succ = succ.right;
+			}		
+
+              		// If we have the right successor in the left subtree, then we know that, the successor right will be null since it is the maximum value. 
+	      		// Hence, link the right of the succParent to the left of the successor. Thereby deleting the successor but not its left subtree if it has any.
+              
+	      		// But if we do not have a successor and succParent is temp itself, then it means that succ does not have a right child. 
+	      		// And hence, we can safely link left of the succParent to the left of the succ. 
+	      		// Now, in this case, succ node is not linked to the tree anymore but this not the node to be deleted. 
+	      		// The node to be deleted is succParent. Hence, replace succParent with succ.
+				
+               		if(succParent != temp)
+				succParent.right = succ.left;
+			else
+				succParent.left = succ.left;
+		
+			temp.key = succ.key; 									
+		}
+	}
+		
+	return temp;
+} 
 ```
