@@ -1,5 +1,5 @@
 # **Array**
-<aside><i>(💡 On Notion → [Array](https://www.notion.so/Array-7ceff335353547cea71713b11e495a5d))</i></aside>
+<aside><i>💡 On Notion → [Array](https://www.notion.so/Array-7ceff335353547cea71713b11e495a5d)</i></aside>
 
 ## **Introduction**
 
@@ -67,7 +67,7 @@ arr = null;
 
 
 ## Problems to Solve
-<aside><i>(💡 On Notion → [Problems on Array](https://www.notion.so/957105dbc51f437da69690edb7313113?v=839ff4599fd647d1a9b6405f01df84bb))</i></aside>)
+<aside><i>💡 On Notion → [Problems on Array](https://www.notion.so/957105dbc51f437da69690edb7313113?v=839ff4599fd647d1a9b6405f01df84bb)</i></aside>)
 
 
 #### EASY
