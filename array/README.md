@@ -1,4 +1,7 @@
 # **Array**
+(<aside>
+💡 Notion → [Array](https://www.notion.so/Array-7ceff335353547cea71713b11e495a5d)
+</aside>)
 
 ## **Introduction**
 
@@ -13,6 +16,7 @@
         *(For more insights on Java Memory Allocation → [Memory Allocation in Java](https://www.notion.so/Memory-Allocation-in-Java-c45580c5299e4264bbabb45daad32e77))*
         
     - The memory isn’t allocated to an object at declaration( `int[] arr` ) but only a reference is created. For the memory allocation of the object, `new` is used, so the object is allocated memory on the heap (`int[] arr = new int[20];`).
+
 
 
 ## **Design and Implementation**
@@ -63,7 +67,12 @@ int[] arr = new int[]{1,3,3,4,5};
 arr = null;
 ```
 
-## [Problems to Solve](https://www.notion.so/Array-6bc9e449e7f64d18a3265dd75ef5789a)
+
+## Problems to Solve
+(<aside>
+💡 Notion → [Problems on Array](https://www.notion.so/957105dbc51f437da69690edb7313113?v=839ff4599fd647d1a9b6405f01df84bb)
+</aside>)
+
 
 #### EASY
 [**1. Two Sum**](https://www.notion.so/Two-Sum-7de5bfc6a9e84770815a15a7baba705b)
