@@ -62,26 +62,26 @@ If we are going to implement binary heap, we will either implement a max heap or
         private int[] heap;
         private int size;
         private int capacity;
-         
+
         // initialise heap
         public BinaryHeap(int capacity){
             this.size = 0;
             heap = new int[ capacity+1];
-    		this.capacity = capacity;
+            this.capacity = capacity;
         }
-    
+
         public boolean isEmpty(){
             return size == 0;
         }
-         
+
         public boolean isFull(){
             return size == capacity;
         }
-    		
-    	public heapify(int[] heap, int index, int size){...}
-    	public void insert(int key){..}
-    	public getMin(){...}
-    	public int extractMin(int[] heap){...}
+        
+        public heapify(int[] heap, int index, int size){...}
+        public void insert(int key){..}
+        public getMin(){...}
+        public int extractMin(int[] heap){...}
     }
     ```
     
@@ -101,11 +101,11 @@ If we are going to implement binary heap, we will either implement a max heap or
     public void insert(int element){
         if (isFull())
             return;
-    
-    	heap[++size] = element;
+
+        heap[++size] = element;
         int current = size;
-     
-        while (heap[current] < heap[current/2]){
+
+        while (heap[current] < heap[current/2]) {
             swap(current, current/2);
             current = current/2;
         }
@@ -197,7 +197,7 @@ If we are going to implement binary heap, we will either implement a max heap or
     ```java
     void build_minheap (int heap[]) {
         for( int i=1 ; i <= size/2 ; i++)
-    	    min_heapify (heap, i, size);
+            min_heapify (heap, i, size);
     }
     ```
     
@@ -218,12 +218,13 @@ If we are going to implement binary heap, we will either implement a max heap or
     ```java
     public void insert(int element){
         if (isFull())
-    	    return;
+            return;
+        
         heap[++size] = element;
         int current = size;
-     
+        
         while (heap[current] > heap[current/2]) {
-    	    swap(current, current/2);
+            swap(current, current/2);
             current = current/2;
         }
     }
