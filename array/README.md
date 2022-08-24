@@ -71,25 +71,25 @@ arr = null;
 
 
 #### EASY
-[**1. Two Sum**](https://www.notion.so/Two-Sum-7de5bfc6a9e84770815a15a7baba705b)
+[1. Two Sum](https://www.notion.so/Two-Sum-7de5bfc6a9e84770815a15a7baba705b)
 
-[**2. Contains Duplicate**](https://www.notion.so/Contains-Duplicate-7ef46634b4f841c19fac5e9a8d69caa9)
+[2. Contains Duplicate](https://www.notion.so/Contains-Duplicate-7ef46634b4f841c19fac5e9a8d69caa9)
 
-[**3. Best Time to Buy and Sell Stock**](https://www.notion.so/Best-Time-to-Buy-and-Sell-Stock-56915dac97ec48cbb2ee22ba7040a10b)
+[3. Best Time to Buy and Sell Stock](https://www.notion.so/Best-Time-to-Buy-and-Sell-Stock-56915dac97ec48cbb2ee22ba7040a10b)
 
 
 #### MEDIUM
-[**4. Product of Array Except Self**](https://www.notion.so/Product-of-Array-Except-Self-e283fe836436453eb09d84f20b46462d)
+[4. Product of Array Except Self](https://www.notion.so/Product-of-Array-Except-Self-e283fe836436453eb09d84f20b46462d)
 
-[**5. Maximum Subarray**](https://www.notion.so/Maximum-Subarray-3647ae03bc8044549bdab2b620a6a5bc)
+[5. Maximum Subarray](https://www.notion.so/Maximum-Subarray-3647ae03bc8044549bdab2b620a6a5bc)
 
-[**6. Maximum Product Subarray**](https://www.notion.so/Maximum-Product-Subarray-1fae2d4d08c241048832eaee34aeae20)
+[6. Maximum Product Subarray](https://www.notion.so/Maximum-Product-Subarray-1fae2d4d08c241048832eaee34aeae20)
 
-[**7. Find Minimum in Rotated Sorted Array**](https://www.notion.so/Find-Minimum-in-Rotated-Sorted-Array-416dd008f8814372a13bac78e6e86143)
+[7. Find Minimum in Rotated Sorted Array](https://www.notion.so/Find-Minimum-in-Rotated-Sorted-Array-416dd008f8814372a13bac78e6e86143)
 
-[**8. Search in Rotated Sorted Array**](https://www.notion.so/Search-in-Rotated-Sorted-Array-258d20b0976f474caced006eb066da6a)
+[8. Search in Rotated Sorted Array](https://www.notion.so/Search-in-Rotated-Sorted-Array-258d20b0976f474caced006eb066da6a)
 
-[**9. 3Sum**](https://www.notion.so/3Sum-0dba4ccb414c4cfe994d182cbfef8fd8)
+[9. 3Sum](https://www.notion.so/3Sum-0dba4ccb414c4cfe994d182cbfef8fd8)
 
-[**10. Container With Most Water**](https://www.notion.so/Container-With-Most-Water-2b9035c70624491599f4161452f38307)
+[10. Container With Most Water](https://www.notion.so/Container-With-Most-Water-2b9035c70624491599f4161452f38307)
 	
