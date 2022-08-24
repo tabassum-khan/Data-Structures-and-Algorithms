@@ -1,7 +1,7 @@
 # Binary Tree
 💡 *On Notion → [Binary Tree](https://www.notion.so/Binary-Tree-8745e2f18f8e4005ae54e308fd0afec8)*
 
-$x^2$
+$2^l$
 
 ## **Introduction**
 A binary tree is a hierarchical data structure in which each node has at most two children generally referred as left child and right child.
