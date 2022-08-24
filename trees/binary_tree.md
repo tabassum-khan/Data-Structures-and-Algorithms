@@ -1,4 +1,5 @@
 # Binary Tree
+💡 *On Notion → [Binary Tree](https://www.notion.so/Binary-Tree-8745e2f18f8e4005ae54e308fd0afec8)*
 
 ## **Introduction**
 A binary tree is a hierarchical data structure in which each node has at most two children generally referred as left child and right child.
@@ -99,35 +100,36 @@ TreeNode root;
 ```java
 public void insert(TreeNode temp, int data) {
 		
-//if root is empty, point root to the new node
-			if (root == null) {
-				root = new TreeNode(data);
-				return;
-			}
-
-//if not empty, then traverse(using bst) till the last node to create a balanced binary tree		
-			Queue<TreeNode> q = new LinkedList<TreeNode>();
-			q.add(temp);
-			
-			while (!q.isEmpty()) {
-				 temp = q.peek();
-				 q.remove();
-				 
-				 if (temp.left == null) {
-					temp.left = new TreeNode(data);
-					return;
-				 }
-				 else
-					 q.add(temp.left);
-				 
-				 if (temp.right == null) {
-					 temp.right = new TreeNode(data);
-					 return;
-				 }
-				 else
-					 q.add(temp.right);
-			}			
+	//if root is empty, point root to the new node
+	if (root == null) {
+		root = new TreeNode(data);
+		return;
 	}
+
+	//if not empty, then traverse(using bst) till the last node to create a balanced binary tree		
+	Queue<TreeNode> q = new LinkedList<TreeNode>();
+	q.add(temp);
+	
+	while (!q.isEmpty()) {
+		 temp = q.peek();
+		 q.remove();
+			 
+		 if (temp.left == null) {
+			temp.left = new TreeNode(data);
+			return;
+		 }
+		 else
+			 q.add(temp.left);
+				 
+		 if (temp.right == null) {
+			 temp.right = new TreeNode(data);
+			 return;
+		 }
+		 else
+			 q.add(temp.right);
+		}			
+	}
+}
 ```
 
 ### Delete a Node
@@ -140,81 +142,82 @@ public void insert(TreeNode temp, int data) {
 
 ```java
 public TreeNode delete (TreeNode temp, int x) { 	
-		//If tree is empty
-		if (temp == null)
-			return null;
+	//If tree is empty
+	if (temp == null)
+		return null;
 		
-		//If there is only root in the tree
-		if (temp.left == null && temp.right == null){
-			if (temp.data == x)
-				temp = null;
-			return temp;
-		}
-		
-		//Level Order traversal
-		Queue<TreeNode> q = new LinkedList<TreeNode>();
-		q.add(temp);
-		
-		TreeNode keyNode = null;
-		TreeNode last = null;
-		
-		while (!q.isEmpty()) {
-			last = q.peek();
-			q.remove();
-			
-			if (last.data == x)
-				keyNode = last;
-			
-			if (last.left != null)
-				q.add(last.left);
-			if (last.right != null)
-				q.add(last.right);
-		}
-		
-		int key = last.data;
-		deleteLast(last);
-		keyNode.data = key;
-		
+	//If there is only root in the tree
+	if (temp.left == null && temp.right == null){
+		if (temp.data == x)
+			temp = null;
 		return temp;
 	}
-	
-	
-	public void deleteLast(TreeNode last) {
-		Queue<TreeNode> q = new LinkedList<TreeNode>();
-		q.add(root);
 		
-		TreeNode temp = null;
+	//Level Order traversal
+	Queue<TreeNode> q = new LinkedList<TreeNode>();
+	q.add(temp);
 		
-		while(!q.isEmpty()) {
-			temp = q.peek();
-			q.remove();
+	TreeNode keyNode = null;
+	TreeNode last = null;
+		
+	while (!q.isEmpty()) {
+		last = q.peek();
+		q.remove();
 			
-			// if the node is equal to the last node, then make it null and return
-			if (temp == last) {
-				temp = null;
+		if (last.data == x)
+			keyNode = last;
+			
+		if (last.left != null)
+			q.add(last.left);
+		if (last.right != null)
+			q.add(last.right);
+	}
+	
+	//Make the keyNode equal to last node before deleting the last node
+	int key = last.data;
+	deleteLast(last);
+	keyNode.data = key;
+		
+	return temp;
+}
+	
+	
+public void deleteLast(TreeNode last) {
+	Queue<TreeNode> q = new LinkedList<TreeNode>();
+	q.add(root);
+		
+	TreeNode temp = null;
+	
+	while(!q.isEmpty()) {
+		temp = q.peek();
+		q.remove();
+			
+		// if the node is equal to the last node, then make it null and return
+		if (temp == last) {
+			temp = null;
+			return;
+		}
+			
+		//check if any of the left or right nodes is equal to the last node before adding them to the queue
+		if (temp.left != null) {
+			if(temp.left == last) {
+				temp.left = null;
 				return;
 			}
+			else
+				q.add(temp.left);
+		}
 			
-			//check if any of the left or right nodes is equal to the last node before adding them to the queue
-			if (temp.left != null) {
-				if(temp.left == last) {
-					temp.left = null;
-					return;
-				}
-				else
-					q.add(temp.left);
+		if (temp.right != null) {
+			if(temp.right == last) {
+				temp.right = null;
+				return;
 			}
-			
-			if (temp.right != null) {
-				if(temp.right == last) {
-					temp.right = null;
-					return;
-				}
-				else
-					q.add(temp.right);
-			}
+			else
+				q.add(temp.right);
 		}
 	}
+}
 ```
 
 ### **Traversal**
@@ -287,18 +290,18 @@ In level order traversal, we traverse the tree level wise
 - Add the left node  and right node if they are not empty
 
 ```java
-			Queue<TreeNode> q = new LinkedList<TreeNode>();
-			q.add(temp);
+Queue<TreeNode> q = new LinkedList<TreeNode>();
+q.add(temp);
 			
-			while (!q.isEmpty()) {
-				 temp = q.peek();
-				 System.out.println(temp.data);
-				 q.remove();
+while (!q.isEmpty()) {
+	temp = q.peek();
+	System.out.println(temp.data);
+	q.remove();
 				 
-				 if (temp.left != null) 
-					 q.add(temp.left);
+	if (temp.left != null) 
+			q.add(temp.left);
 				 
-				 if (temp.right != null)
-					 q.add(temp.right);
-			}		
+	if (temp.right != null)
+			q.add(temp.right);
+}			
 ```
