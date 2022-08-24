@@ -17,20 +17,19 @@ The topmost node in the tree is called the root. An empty tree is represented by
 ![Binary Tree Representation](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/raw/master/assets/binary_tree.png)
 
 ## **Properties**
-
-1. The maximum number of nodes at level $‘l’$ of a binary tree is $(2^l)$. For root, $l = 0$, number of nodes = $2^0 = 1.$
-2. Maximum number of nodes in a binary tree of height $h$ is $2^h – 1$. When height of the root is considered as 0, in this convention, the above formula becomes $2^h+ 2^1 -1$.
-3. In a Binary Tree with N nodes, minimum possible height or minimum number of levels is $log(N+1)$.
-4. A Binary Tree with L leaves has at least $log(L) + 1$ levels.
+1. The maximum number of nodes at level $‘l’$ of a binary tree is $**2^l**$.For root, $l = 0$, number of nodes = $2^0 = 1.$
+2. Maximum number of nodes in a binary tree of height $‘h’$ is $**2^h – 1**$. When height of the root is considered as 0, in this convention, the above formula becomes $**2^h+ 2^1 -1$.**
+3. In a Binary Tree with N nodes, minimum possible height or minimum number of levels is $**log(N+1)**$.
+4. A Binary Tree with L leaves has at least $**log(L) + 1**$ levels.
 5. In Binary tree where every node has 0 or 2 children, number of leaf nodes is always one more than nodes with two children.
     
     > $L = T + 1$
     > 
     > 
-    > Where, $L$ = Number of leaf nodes
+    > Where, $**L**$ = Number of leaf nodes
     > 
     > $T$ = Number of internal nodes with two children
-    > 
+
 
 ## **Types of Binary Trees**
 
