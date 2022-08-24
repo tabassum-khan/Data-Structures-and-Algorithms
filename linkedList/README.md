@@ -1,10 +1,11 @@
 # Linked List
 
 ## Introduction
+>💡 On Notion → [Linked List](https://www.notion.so/Linked-List-eeff5bf5462d4c05896e98af41da2873)
 
 - A linked list is a linear data structure, in which the elements are not stored at contiguous memory locations.. The elements in a linked list are linked using pointers.
 
-![Representation of Singly Linked List](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/675dceda-6e86-4983-933a-86da76607128/Untitled.png)
+![Representation of Singly Linked List](https://www.notion.so/Linked-List-eeff5bf5462d4c05896e98af41da2873#c922c709c8144787be967a902262ad05)
 
 - **Advantages over arrays:**
     - Dynamic size
