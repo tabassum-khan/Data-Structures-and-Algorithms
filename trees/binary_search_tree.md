@@ -27,8 +27,8 @@ class TreeNode
     }
 
     public TreeNode(){
-		left = right = null;
-	}
+    	left = right = null;
+    }
 }
 TreeNode root;
 ```
@@ -93,17 +93,19 @@ public TreeNode searchNode(TreeNode temp, TreeNode prev, int data) {
     - **1 child** → then link the parent node to the child and delete the node
         
         ```
-        			  50                             50(parent)
+        	      50                             50(parent)
                    /     \       delete(30)         /   \
                   30      70     --------->(child)40     70
                     \    /  \                          /  \
                     40  60   80                       60   80
         ```
         
-    - **2 children** → Find the inorder successor of the node and we need to replace the node with the inorder successor and then delete the inorder successor. 
-            > So, we can either traverse through the right subtree and find the smallest node (last left node in the right substree), replace the node to be deleted with the smallest node and then delete the smallest node.
-    **OR**
-            > We can traverse through the left subtree to find the largest node (last right node in left subtree),  replace the node to be deleted with the largest node and then delete the largest node.
+    - **2 children** → Find the inorder successor of the node and we need to replace the node with the inorder successor and then delete the inorder successor.
+    	> So, we can either traverse through the right subtree and find the smallest node (last left node in the right substree), replace the node to be deleted with the smallest node and then delete the smallest node.
+    	> 
+    	> **OR**
+    	> 
+    	> We can traverse through the left subtree to find the largest node (last right node in left subtree),  replace the node to be deleted with the largest node and then delete the largest node.
 
         ```
                       50                            60
