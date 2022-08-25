@@ -19,7 +19,7 @@
 
 ![Heap representation](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/raw/master/assets/heap.png)
 >💡 Here we are only going to cover Binary Heap
-
+---
 ## **Binary Heap**
 
 - A Binary Heap is a Binary Tree with following properties:
@@ -36,8 +36,8 @@
     > 3. Parent : i/2
     
 - **Applications**
-    - 1. [Heap Sort](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/trees.heap_sort.md)
-    - 2. [Priority Queues](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/queues/priority_queues.md)
+    - [Heap Sort](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/trees.heap_sort.md)
+    - [Priority Queues](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/queues/priority_queues.md)
 
 ## **Design and Implementation**
 
@@ -84,13 +84,11 @@ If we are going to implement binary heap, we will either implement a max heap or
         public int extractMin(int[] heap){...}
     }
     ```
-    
-
-### Min Heap Implementation
-
 ---
 
-**Insertion**
+### Min Heap Implementation
+---
+**1. Insertion**
 
 - If heap is full, i.e if heap array has exhausted its full capacity, then return.
 - Else, insert the element to the next empty slot.
@@ -113,9 +111,7 @@ If we are going to implement binary heap, we will either implement a max heap or
     ```
     
 
----
-
-**Get the minimum element: getMin()**
+**2. Get the minimum element: getMin()**
 
 - In Min Heap, the minimum element will be present at the root. The root is at index ‘1’ of the heap array.
     
@@ -124,11 +120,8 @@ If we are going to implement binary heap, we will either implement a max heap or
         return heap[1];
     }
     ```
-    
 
----
-
-**Extract the minimum element: extractMin()**
+**3. Extract the minimum element: extractMin()**
 
 - In Min Heap, the minimum element will be present at the root. The root is at index ‘1’ of the heap array.
 - We need to return this element as well as remove it. To delete the element, copy the last element to the root element. Delete the last element and decrease size.
@@ -148,11 +141,9 @@ If we are going to implement binary heap, we will either implement a max heap or
         return lastElement; 
     }
     ```
-    
+   
 
----
-
-**minHeapify()**
+**4. minHeapify()**
 
 - The most important step in the implementation of heap. This method will heapify the heap to min heap or max heap as defined. It takes 3 paramters
     - **heap[]** → which heap to heapify
@@ -181,11 +172,8 @@ If we are going to implement binary heap, we will either implement a max heap or
         } 
     }
     ```
-    
 
----
-
-**buildHeap() → to build a min/max heap of any given array.**
+**5. buildHeap() → to build a min/max heap of any given array.**
 
 - We have a heap to store N elements indexed from 1 to N. They are currently not following the property of min heap. So we can use `min_heapify()` function to make a min heap out of the array.
 - Now we know that by using `min_heapify()`, we can adjust a node of the heap array to its correct position. In order for the whole array to satisfy the min heap properties, wehave to `min_heapify()` every node to place it in its correct position.
@@ -208,7 +196,7 @@ If we are going to implement binary heap, we will either implement a max heap or
 
 ---
 
-**Insertion**
+**1. Insertion**
 
 - If heap is full, i.e if heap array has exhausted its full capacity, then return.
 - Else, insert the element to the next empty slot.
@@ -229,11 +217,9 @@ If we are going to implement binary heap, we will either implement a max heap or
         }
     }
     ```
-    
+ 
 
----
-
-**Get the maximum element: getMax()**
+**2. Get the maximum element: getMax()**
 
 - In Max Heap, the maximum element will be present at the root. The root is at index ‘1’ of the heap array.
     
@@ -242,11 +228,9 @@ If we are going to implement binary heap, we will either implement a max heap or
         return heap[1];
     }
     ```
-    
+  
 
----
-
-**Extract the minimum element: extractMax()**
+**3. Extract the minimum element: extractMax()**
 
 - In Max Heap, the maximum element will be present at the root. The root is at index ‘1’ of the heap array.
 - We need to return this element as well as remove it. To delete the element, copy the last element to the root element. Delete the last element and decrease size.
@@ -266,11 +250,8 @@ If we are going to implement binary heap, we will either implement a max heap or
         return lastElement; 
     }
     ```
-    
 
----
-
-**maxHeapify()**
+**4. maxHeapify()**
 
 - The most important step in the implementation of heap. This method will heapify the heap to min heap or max heap as defined. It takes 3 paramters:
     - **heap[]** → which heap to heapify
@@ -299,11 +280,9 @@ If we are going to implement binary heap, we will either implement a max heap or
         } 
     }
     ```
-    
+  
 
----
-
-**buildHeap() → to build a min/max heap of any given array.**
+**5. buildHeap() → to build a min/max heap of any given array.**
 
 - We have a heap to store N elements indexed from 1 to N. They are currently not following the property of max heap. So we can use `max_heapify()` function to make a max heap out of the array.
 - Now we know that by using `max_heapify()`, we can adjust a node of the heap array to its correct position. In order for the whole array to satisfy the max heap properties, we have to `max_heapify()` every node to place it in its correct position.
