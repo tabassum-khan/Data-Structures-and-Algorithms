@@ -27,9 +27,9 @@
     2. **A Binary Heap is either Min Heap or Max Heap**. 
         1. In a **Min Binary Heap**, the key at root must be minimum among all keys present in Binary Heap. The same property must be recursively true for all nodes in Binary Tree. 
         2. **Max Binary Heap** is similar to MinHeap except the root must be maximum among all keys present in Binary Heap. The same property must be recursively true for all nodes in Binary Tree. 
-- A Binary is typically represented as an array. The root element will be at `arr[0]`. The relationship between the elements of the heap can be represented as:
+- A Binary Heap is typically represented as an array. The root element will be at `arr[0]`. The relationship between the elements of the heap can be represented as:
     
-    > Note : The indexing starts from 1 and not 0 to make indexing easier.
+    > Note : The indexing starts from 1 and not 0 to make indexing easier. Lets say that an element is at index 'i', then its
     > 
     > 1. Left child : 2*i
     > 2. Right child : 2*i + 1
@@ -78,7 +78,14 @@ If we are going to implement binary heap, we will either implement a max heap or
             return size == capacity;
         }
         
-        public heapify(int[] heap, int index, int size){...}
+        public void swap(int index1, int index2){
+            int temp = heap[index1];
+            heap[index1] = heap[index2];
+            heap[index2] = temp;
+        }
+        
+        public buildHeap(int[] arr){..}
+        public heapify(int[] arr, int index, int size){...}
         public void insert(int key){..}
         public getMin(){...}
         public int extractMin(int[] heap){...}
@@ -88,7 +95,7 @@ If we are going to implement binary heap, we will either implement a max heap or
 
 ### Min Heap Implementation
 ---
-**1. Insertion**
+**1. Insertion → O(Logn)**
 
 - If heap is full, i.e if heap array has exhausted its full capacity, then return.
 - Else, insert the element to the next empty slot.
@@ -111,7 +118,7 @@ If we are going to implement binary heap, we will either implement a max heap or
     ```
     
 
-**2. Get the minimum element: getMin()**
+**2. Get the minimum element: getMin() → O(1)**
 
 - In Min Heap, the minimum element will be present at the root. The root is at index ‘1’ of the heap array.
     
@@ -121,74 +128,80 @@ If we are going to implement binary heap, we will either implement a max heap or
     }
     ```
 
-**3. Extract the minimum element: extractMin()**
+**3. Extract the minimum element: extractMin() → O(Logn)**
 
 - In Min Heap, the minimum element will be present at the root. The root is at index ‘1’ of the heap array.
-- We need to return this element as well as remove it. To delete the element, copy the last element to the root element. Delete the last element and decrease size.
+- We need to return this element as well as remove it. To delete the element, copy the last element to the root element and decrease size.
 - Since the last element has been copied to the first element, we must heapify it to maintain the min heap property. Now it will only heapify till the new size.
     
     ```java
-    public int extractMin(int[] heap){ 
-        // Get the last element and decrease size
-        int lastElement = arr[size--];
-    
-        // Replace root with last element 
-        heap[1] = lastElement; 
-      
+    public int extractMin(){ 
+        // Get the min element
+        int minElement = heap[1]
+
+        // Replace root with last element and decrease its size
+        heap[1] =  heap[size--]; 
+
         // heapify the root node 
         min_heapify(heap, 1, size); 
-        
-        return lastElement; 
+
+        return minElement; 
     }
     ```
    
 
-**4. minHeapify()**
+**4. minHeapify() → O(Logn)**
 
 - The most important step in the implementation of heap. This method will heapify the heap to min heap or max heap as defined. It takes 3 paramters
-    - **heap[]** → which heap to heapify
+    - **arr[]** → which array to heapify
     - **int index** → from which index should it begin to heapify
     - **int size** → it will heapify the heap till the end of the heap (`size`)
 - Suppose we have any heap with some elements. For any node that we select, we check with its left child and right child and find the smallest of the three. Then we swap the smallest node with the selected node if the selected node itself is not the smallest.
 - Now do this for every node and we will have a min heap.
     
     ```java
-    void min_heapify (int heap[] , int index, int size){
-        int left  = 2*i; // left child
-        int right = 2*i+1; // right child
+    void min_heapify (int[] arr, int index, int size){
+        int left  = 2*index; // left child
+        int right = 2*index+1; // right child
         int smallest;
-    
-        if(left <= size and heap[left] < heap[index] )
+
+        if(left <= size && arr[left] < arr[index] )
              smallest = left;
         else
             smallest = index;
-    
-        if(right <= size and heap[right] < heap[smallest] )
+
+        if(right <= size && arr[right] < arr[smallest] )
             smallest = right;
-    
+
         if(smallest != index){
-            swap (heap[index], heap[smallest]);
-            min_heapify (heap, smallest, size);
+            swap (index, smallest]);
+            min_heapify (arr, smallest, size);
         } 
     }
     ```
+    >💡 For an element to be placed at its right position, it will check with its parent and sibling and then swap if it is the smallest of the three. At most, any element at level ‘l’ will make ‘l’ swaps where l = number of levels.
+    >
+    >Now, maximum of nodes, n,  at any level, $'l'$, in a binary tree can be given by: $n = 2^l$. Hence, the time complexity for any element at level $'l'$ to be placed at its right position is $O(Logn)$
 
-**5. buildHeap() → to build a min/max heap of any given array.**
+**5. buildHeap() → to build a min/max heap of any given array → O(nLogn)**
 
 - We have a heap to store N elements indexed from 1 to N. They are currently not following the property of min heap. So we can use `min_heapify()` function to make a min heap out of the array.
 - Now we know that by using `min_heapify()`, we can adjust a node of the heap array to its correct position. In order for the whole array to satisfy the min heap properties, wehave to `min_heapify()` every node to place it in its correct position.
 - If we start from `index=1` , then we start from the first element and adjust it and we do this till the last element including leaf nodes. But, if you observe carefully, you will find that as you adjust from top to bottom, the leaf node automatically adjust themselves. Another way to think is that the leaf nodes have no children to compare themselves with. Hence, we only need to check till the level above leaf nodes.
 - A N element heap stored in an array will have leaves indexed by N/2+1, N/2+2 , N/2+3 …. upto N. Hence, we ony have to iterate `min_heapify()` from `index=1` to `index=N/2`.
-    
-    ![Heap leafnodes](/assets/heap image.jpg)
+    ![image](https://user-images.githubusercontent.com/22317530/186902610-c6ef626f-7338-4383-af23-a54efa4a722f.png)
     
     ```java
-    void build_minheap (int heap[]) {
+   void build_minheap(int[] arr){
+        this.size = arr.length-1;
+        
         for( int i=1 ; i <= size/2 ; i++)
-            min_heapify (heap, i, size);
+            min_heapify (arr, i, size);
+            
+        this.heap = arr;
     }
     ```
-    
+   >💡 To heapify an element, it takes O(Logn) time. Thus, to heapify ‘n’ elements it will take O(nLogn) time.
 
 ---
 
@@ -196,7 +209,7 @@ If we are going to implement binary heap, we will either implement a max heap or
 
 ---
 
-**1. Insertion**
+**1. Insertion → O(Logn)**
 
 - If heap is full, i.e if heap array has exhausted its full capacity, then return.
 - Else, insert the element to the next empty slot.
@@ -219,7 +232,7 @@ If we are going to implement binary heap, we will either implement a max heap or
     ```
  
 
-**2. Get the maximum element: getMax()**
+**2. Get the maximum element: getMax() → O(1)**
 
 - In Max Heap, the maximum element will be present at the root. The root is at index ‘1’ of the heap array.
     
@@ -230,69 +243,72 @@ If we are going to implement binary heap, we will either implement a max heap or
     ```
   
 
-**3. Extract the minimum element: extractMax()**
+**3. Extract the minimum element: extractMax() → O(Logn)**
 
 - In Max Heap, the maximum element will be present at the root. The root is at index ‘1’ of the heap array.
-- We need to return this element as well as remove it. To delete the element, copy the last element to the root element. Delete the last element and decrease size.
-- Since the last element has been copied to the first element, we must heapify it to maintain the max heap property. Now it will only heapify till the new size.
+- We need to return this element as well as remove it. To delete the element, copy the last element to the root element and decrease size.nce the last element has been copied to the first element, we must heapify it to maintain the max heap property. Now it will only heapify till the new size.
     
     ```java
-    public int extractMax(int[] heap){ 
+    public int extractMax(){ 
         // Get the last element and decrease size
-        int lastElement = arr[size--];
-    
-        // Replace root with last element 
-        heap[1] = lastElement; 
-      
+        int maxElement = heap[1];
+
+        // Replace root with last element and decrease size 
+        heap[1] = heap[size--];
+
         // heapify the root node 
         max_heapify(heap, 1, size); 
-    
-        return lastElement; 
+
+        return maxElement; 
     }
     ```
 
-**4. maxHeapify()**
+**4. maxHeapify() → O(Logn)**
 
 - The most important step in the implementation of heap. This method will heapify the heap to min heap or max heap as defined. It takes 3 paramters:
-    - **heap[]** → which heap to heapify
+    - **arr[]** → which heap to heapify
     - **int index** → from which index should it begin to heapify
     - **int size** → it will heapify the heap till the end of the heap (`size`)
 - Suppose we have any heap with some elements. For any node that we select, we check with its left child and right child and find the largest of the three. Then we swap the largest node with the selected node if the selected node itself is not the largest.
 - Now do this for every node and we will have a max heap.
     
     ```java
-    void max_heapify(int heap[] , int index, int size){
-        int left  = 2*i; // left child
-        int right = 2*i+1; // right child
+    void max_heapify(int arr[] , int index, int size){
+        int left  = 2*index; // left child
+        int right = 2*index+1; // right child
         int largest;
-    
-        if(left <= size and heap[left] > heap[index] )
+
+        if(left <= size && arr[left] > arr[index] )
              largest = left;
         else
             largest = index;
-    
-        if(right <= size and heap[right] > heap[largest] )
+
+        if(right <= size && arr[right] > arr[largest] )
             largest = right;
-    
+
         if(largest != index){
-            swap (heap[index], heap[largest]);
-            max_heapify (heap, largest, size);
+            swap (index, largest);
+            max_heapify (arr, largest, size);
         } 
     }
     ```
   
 
-**5. buildHeap() → to build a min/max heap of any given array.**
+**5. buildHeap() → to build a min/max heap of any given array → O(nLogn)**
 
-- We have a heap to store N elements indexed from 1 to N. They are currently not following the property of max heap. So we can use `max_heapify()` function to make a max heap out of the array.
+- We have an array to store N elements indexed from 1 to N. They are currently not following the property of max heap. So we can use `max_heapify()` function to make a max heap out of the array.
 - Now we know that by using `max_heapify()`, we can adjust a node of the heap array to its correct position. In order for the whole array to satisfy the max heap properties, we have to `max_heapify()` every node to place it in its correct position.
 - If we start from `index=1` , then we start from the first element and adjust it and we do this till the last element including leaf nodes. But, if you observe carefully, you will find that as you adjust from top to bottom, the leaf node automatically adjust themselves. Another way to think is that the leaf nodes have no children to compare themselves with. Hence, we only need to check till the level above leaf nodes.
 - A N element heap stored in an array will have leaves indexed by N/2+1, N/2+2 , N/2+3 …. upto N. Hence, we ony have to iterate `max_heapify()` from `index=1` to `index=N/2`.
     
     ```java
-    void build_maxheap (int heap[]){
+    void build_maxheap (int[] arr){
+        this.size = arr.length-1;
+        
         for(int i = size/2 ; i >= 1 ; i-- )
-            max_heapify (heap, i, size) ;
+          max_heapify (heap, i, size) ;
+          
+        this.heap = arr;
     }
     ```
 
