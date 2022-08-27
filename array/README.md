@@ -1,5 +1,5 @@
 # **Array**
->💡 On Notion → [Array](https://www.notion.so/Array-7ceff335353547cea71713b11e495a5d)
+>💡 On Notion → [Array](https://www.notion.so/Array-28832f88e843450499bcfcda674fd0ac)
 
 ## **Introduction**
 
