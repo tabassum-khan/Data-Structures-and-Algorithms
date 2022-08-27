@@ -6,9 +6,9 @@ This may also help, if you're a computer science student who needs to prepare fo
 
 😍 Suggestions and contributions are welcome! 😍
 
-----
+<br/>
 
-### How to use this repository?
+### **💡 How to use this repository?**
 >
 > The respository can be cloned or be downloaded as a zip file.
 >
@@ -16,25 +16,27 @@ This may also help, if you're a computer science student who needs to prepare fo
 > 
 > You can choose to go through the topics on GitHub itself or if you are feeling a bit fancy, you can easily access the whole [Data Structure and Algorithms Database](https://www.notion.so/Data-Structure-and-Algorithms-2de89667a1854d9698ea81be51496b40) on [Notion](https://www.notion.so/desktop).
 
-   
 
-### Important Resources
+<br/>
 
-The resources listed below have helped me immensely through this journey.
+### **💡 Important Resources**
 
-- [GeeksforGeeks Gate Syllabus for Data Structures and Algorithms](https://www.geeksforgeeks.org/gate-cs-notes-gq/) --> Section 3: Algorithms, Section 4: Programming and Data Structures
+>The resources listed below have helped me immensely through this journey.
+>
+> - [GeeksforGeeks Gate Syllabus for Data Structures and Algorithms](https://www.geeksforgeeks.org/gate-cs-notes-gq/) --> Section 3: Algorithms, Section 4: Programming and Data Structures
+>
+> - HackerEarth Tutorials and Problems:
+> 
+>     - [Basic Programming](https://www.hackerearth.com/practice/basic-programming/). 
+>     - [Data Structure](https://www.hackerearth.com/practice/data-structures/).
+>     - [Algorithm](https://www.hackerearth.com/practice/algorithms/).
+> - Youtube Links:
+>
+>     - [Algorithm Tutorials by Abdul Bari](https://youtu.be/0IAPZzGSbME). 
+>     - [My Code School Data Structure Tutorial](https://youtu.be/92S4zgXN17o).
+>     
+<br/>
 
-- HackerEarth Tutorials and Problems:
-
-  - [Basic Programming](https://www.hackerearth.com/practice/basic-programming/).  
-  - [Data Structure](https://www.hackerearth.com/practice/data-structures/).
-  - [Algorithm](https://www.hackerearth.com/practice/algorithms/).
-
-- Youtube Links:
-
-   - [Algorithm Tutorials by Abdul Bari](https://youtu.be/0IAPZzGSbME). 
-   - [My Code School Data Structure Tutorial](https://youtu.be/92S4zgXN17o).
- 
 
 # Data Structures
 
@@ -67,6 +69,7 @@ The resources listed below have helped me immensely through this journey.
 
 - [Hashing and HashTable Introduction](/hashing/).
 
+<br/>
 
 # Algorithms
 
@@ -126,6 +129,7 @@ Different problems require the use of different kinds of techniques. A good prog
 - [Egyptian Fraction](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/greedyAlgo/egyptian_fraction.md).
 - [Bracket Balancing](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/greedyAlgo/bracket_balancing.md).
 
+<br/>
 
 # Useful Information
 
@@ -137,6 +141,7 @@ Big O notation is used to classify algorithms according to how their running tim
 
 Source: [Big O Cheat Sheet](https://www.bigocheatsheet.com/).
 
+<br/>
 
 Below is the list of some of the most used Big O notations and their performance comparisons against different sizes of the input data.
 
@@ -149,6 +154,8 @@ Below is the list of some of the most used Big O notations and their performance
 | **O(N^2)**     | 100                          | 10000                         | 1000000                         |
 | **O(2^N)**     | 1024                         | 1.26e+29                      | 1.07e+301                       |
 | **O(N!)**      | 3628800                      | 9.3e+157                      | 4.02e+2567                      |
+
+<br/>
 
 ### Data Structure Operations Complexity
 
@@ -164,6 +171,8 @@ Below is the list of some of the most used Big O notations and their performance
 | **Red-Black Tree**      | log(n)    | log(n)    | log(n)    | log(n)    |           |
 | **AVL Tree**            | log(n)    | log(n)    | log(n)    | log(n)    |           |
 | **Bloom Filter**        | -         | 1         | 1         | -         | False positives are possible while searching |
+
+<br/>
 
 ### Array Sorting Algorithms Complexity
 
