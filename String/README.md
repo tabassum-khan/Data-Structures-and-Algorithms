@@ -1,7 +1,7 @@
 >💡 This syllabus will only focus on Strings in Java.
 
 # String
->💡 On Notion → [String](https://www.notion.so/String-48c0ba0133bd44ae8e35f9829dbd0cfe)
+>💡 On Notion → [String](https://www.notion.so/String-2ec93655b6f5494ca58cfb628eec9690)
 
 ## **Introduction**
 
