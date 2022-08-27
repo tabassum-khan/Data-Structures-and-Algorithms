@@ -83,7 +83,7 @@ The respository can be cloned or be downloaded as a zip file.
 - [Queue using Array](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/queues/QueueArray.java).
 - [Queue using Linked List](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/queues/QueueLL.java).
 - [Circular Queue](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/queues/CircularQueue.java).
-- [Priority Queue](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/queues/PriorityQueues.java). A queue where the most important element is always at the front.
+- [Priority Queue](queues/priority_queues.md). A queue where the most important element is always at the front.
 
 ### Hashing
 
@@ -99,11 +99,11 @@ The respository can be cloned or be downloaded as a zip file.
 ### Tree
 
 - [Tree](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/trees). Introduction to Trees.
-- [Binary Tree](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/trees/master/binary_tree.md). A tree where each node has at most two children.
-- [Binary Search Tree(BST)](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/trees/master/binary_search_tree). A binary tree that orders its nodes in a way that allows for fast queries.
+- [Binary Tree](trees/binary_tree.md). A tree where each node has at most two children.
+- [Binary Search Tree(BST)](trees/binary_search_tree.md). A binary tree that orders its nodes in a way that allows for fast queries.
 - [Augmented Trees](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/trees/augmented_trees.md). 
-- [Heap](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/trees/heap.md). A binary tree stored in an array, so it doesn't use pointers. Makes a great priority queue.
-- [Trie](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/trees/trie.md). A special type of tree used to store associative data structures.
+- [Heap](trees/heap.md). A binary tree stored in an array, so it doesn't use pointers. Makes a great priority queue.
+- [Trie](trees/trie.md). A special type of tree used to store associative data structures.
 
 
 ### Graph
@@ -137,7 +137,7 @@ Different problems require the use of different kinds of techniques. A good prog
   - [Merge Sort](). 
   - [Quick Sort]().
   - [Hoare Quick Sort]().
-  - [Heap Sort]().
+  - [Heap Sort](sorting/heap_sort.md).
   
 **3. Special Purpose Sorts:**
 
