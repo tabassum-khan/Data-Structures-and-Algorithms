@@ -1,148 +1,98 @@
 # Data Structures and Algorithms
 
-Here you'll find implementations of popular algorithms and data structures in Java language Swift, with brief explanations of how they work.
+This is a complete guide to Interview Preparation. This repository entails some of the most frequently asked Data Structures and Algorithms. It contains the theory as well as popular problems from LeetCode and Cracking the Coding Interview Book. 
 
-If you're a computer science student who needs to learn this stuff for exams -- or if you're a self-taught programmer who wants to brush up on the theory behind your craft -- this repository will definitely help!
+This may also help, if you're a computer science student who needs to prepare for exams -- or if you're a self-taught programmer who wants to brush up on the theory behind your craft -- this repository will definitely help!
 
 😍 Suggestions and contributions are welcome! 😍
 
+----
 
-## How to use this repository?
-
-The respository can be cloned or be downloaded as a zip file.
-
-1. Install all Dependencies
-
-    - [Download JDk](https://www.oracle.com/in/java/technologies/javase-downloads.html)
-  
-    - [Set the Environment Path Variable](https://www.java.com/en/download/help/path.xml)
-  
-    - [Downlod Eclipse](https://www.eclipse.org/downloads/packages/release/oxygen/3a/eclipse-ide-java-developers)
-  
-2. Open the folder in Eclipse
-
-    * File -> Import -> Projects from or Archive -> Select Directory -> Select the Project -> Finish
+### How to use this repository?
+>
+> The respository can be cloned or be downloaded as a zip file.
+>
+> Or
+> 
+> You can choose to go through the topics on GitHub itself or if you are feeling a bit fancy, you can easily access the whole [Data Structure and Algorithms Database](https://www.notion.so/Data-Structure-and-Algorithms-2de89667a1854d9698ea81be51496b40) on [Notion](https://www.notion.so/desktop).
 
    
 
-## Important Resources
+### Important Resources
 
-[Codechef CCDSAP Syllabus](https://www.codechef.com/certification/data-structures-and-algorithms/prepare). A syllabus to prepare to get certified in DSA by Codechef.
+The resources listed below have helped me immensely through this journey.
 
-[GeeksforGeeks Gate Syllabus for Data Structures and Algorithms](https://www.geeksforgeeks.org/gate-cs-notes-gq/) --> Section 3: Algorithms, Section 4: Programming and Data Structures
+- [GeeksforGeeks Gate Syllabus for Data Structures and Algorithms](https://www.geeksforgeeks.org/gate-cs-notes-gq/) --> Section 3: Algorithms, Section 4: Programming and Data Structures
 
-**HackerEarth Tutorials and Problems:**
+- HackerEarth Tutorials and Problems:
 
   - [Basic Programming](https://www.hackerearth.com/practice/basic-programming/).  
   - [Data Structure](https://www.hackerearth.com/practice/data-structures/).
   - [Algorithm](https://www.hackerearth.com/practice/algorithms/).
 
-**Youtube Links:**
+- Youtube Links:
 
    - [Algorithm Tutorials by Abdul Bari](https://youtu.be/0IAPZzGSbME). 
    - [My Code School Data Structure Tutorial](https://youtu.be/92S4zgXN17o).
+ 
+
+# Data Structures
+
+### Linear Data Structures
+
+- [Array](/array/)
+- [Linked List](/linkedList/)
+- [String](/String/)
+- [Stack](/stacks/). Last In First Out (LIFO)
+- [Queues](/queues/). First In First Out (FIFO)
+    - [Circular Queue](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/queues/CircularQueue.java).
+    - [Priority Queue](queues/priority_queues.md)
 
 
-## Where to start?
+### Hierarchial Data Structures
 
-[Array](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/array).
-
-[Linked List](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/linkedList).
-
-[Stacks](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/stacks).
-
-[Queues](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/queues).
-
-[Recursion](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/recursion).
-    
-    
-## Linear Data Structures
-
-### Array
-
-- [Introduction to Array](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/array/)
-
-### Linked List
-
-- [Introduction to Linked List](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/linkedList)
-
-### String
-
-- [Introduction to String](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/String)
-
-### Stack - Last in First Out
-
-- [Introduction](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/stacks/).
-- [Implementing Stack using Array](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/stacks/StackArray.java).
-- [Implementing Stack using Linked List](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/stacks/StackLL.java).
+- [Tree](/trees). Introduction to Trees
+    - [Binary Tree](trees/binary_tree.md). A tree where each node has at most two children
+    - [Binary Search Tree(BST)](trees/binary_search_tree.md). A binary tree that orders its nodes in a way that allows for fast queries
+    - [Heap](trees/heap.md). A binary tree stored in an array, so it doesn't use pointers. Makes a great priority queue
+    - [Trie](trees/trie.md). A special type of tree used to store associative data structures
 
 
-### Queues - First in First Out
-
-- [Introduction](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/queues/).
-- [Queue using Array](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/queues/QueueArray.java).
-- [Queue using Linked List](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/queues/QueueLL.java).
-- [Circular Queue](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/queues/CircularQueue.java).
-- [Priority Queue](queues/priority_queues.md). A queue where the most important element is always at the front.
+- [Graph](/graphs). Introduction to Graphs.
+    - [BFS and DFS](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/graphs/BFS_DFS.java).
+    - [Graph using Adajcency List](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/graphs/AdjacencyList.java).
+    - [Graph using HashSets](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/graphs/Graph_SetsandHash.java).
 
 ### Hashing
 
-- [Hashing and HashTable Introduction](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/hashing/).
-- [Separate Chaining](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/hashing/SeparateChaining.java).
-- [Linear Probing](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/hashing/LinearProbing.java).
-- [Quadratic Probing](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/hashing/QuadraticProbing.java).
-- [Double Hashing](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/hashing/double_hashing.md).
+- [Hashing and HashTable Introduction](/hashing/).
 
 
-## Hierarchial Data Structures
-
-### Tree
-
-- [Tree](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/trees). Introduction to Trees.
-- [Binary Tree](trees/binary_tree.md). A tree where each node has at most two children.
-- [Binary Search Tree(BST)](trees/binary_search_tree.md). A binary tree that orders its nodes in a way that allows for fast queries.
-- [Augmented Trees](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/trees/augmented_trees.md). 
-- [Heap](trees/heap.md). A binary tree stored in an array, so it doesn't use pointers. Makes a great priority queue.
-- [Trie](trees/trie.md). A special type of tree used to store associative data structures.
-
-
-### Graph
-
-- [Graph](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/tree/master/graphs). Introduction to Graphs.
-- [BFS and DFS](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/graphs/BFS_DFS.java).
-- [Graph using Adajcency List](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/graphs/AdjacencyList.java).
-- [Graph using HashSets](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/graphs/Graph_SetsandHash.java).
-
-
-## Algorithms
+# Algorithms
 
 Different problems require the use of different kinds of techniques. A good programmer uses all these techniques based on the type of problem. Some commonly-used techniques are:
 
-1. **Divide and conquer**
-2. **Randomized algorithms**
-3. **Greedy algorithms (This is not an algorithm, it is a technique.)**
-4. **Dynamic programming**
+1. Divide and conquer
+2. Randomized algorithms
+3. Greedy algorithms
+4. Dynamic programming
+5. Recursion
 
 
 ### Sorting
-
-**1. Basic Sorts:**
-
-  - [Insertion Sort]().
-  - [Bubble Sort]().
-  - [Selection Sort]().
-
-**2. Fast Sorts:**
-
-  - [Merge Sort](). 
-  - [Quick Sort]().
-  - [Hoare Quick Sort]().
-  - [Heap Sort](sorting/heap_sort.md).
+1. Basic Sorts
+    - [Insertion Sort]()
+    - [Bubble Sort]()
+    - [Selection Sort]()
+2. Fast Sorts
+    - [Merge Sort]()
+    - [Quick Sort]()
+    - [Hoare Quick Sort]()
+    - [Heap Sort](sorting/heap_sort.md)
   
-**3. Special Purpose Sorts:**
-
-- [Counting Sort]().
-- [Radix Sort]().
+3. Special Purpose Sorts
+    - [Counting Sort]()
+    - [Radix Sort]()
 
 
 
@@ -151,12 +101,9 @@ Different problems require the use of different kinds of techniques. A good prog
 - [Linear Search](). Find an element in an array.
 - [Binary Search](). Quickly find elements in a sorted array.
 - [k-th Largest Element](). Find the k-th largest element in an array, such as the median.
-
-
-### String Search
-
-- [Brute-Force String Search](). A naive method.
-- [Boyer-Moore](). A fast method to search for substrings. It skips ahead based on a look-up table, to avoid looking at every character in the text.
+- String Search
+    - [Brute-Force String Search](). A naive method.
+    - [Boyer-Moore](). A fast method to search for substrings. It skips ahead based on a look-up table, to avoid looking at every character in the text.
 
 
 ### Backtracking
@@ -180,7 +127,7 @@ Different problems require the use of different kinds of techniques. A good prog
 - [Bracket Balancing](https://github.com/tabassum-khan/Data-Structures-and-Algorithms/blob/master/greedyAlgo/bracket_balancing.md).
 
 
-## Useful Information
+# Useful Information
 
 ### Big O Notation
 
