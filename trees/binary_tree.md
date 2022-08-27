@@ -1,5 +1,5 @@
 # Binary Tree
-💡 *On Notion → [Binary Tree](https://www.notion.so/Binary-Tree-8745e2f18f8e4005ae54e308fd0afec8)*
+💡 *On Notion → [Binary Tree](https://www.notion.so/Binary-Tree-19cdd69dec4e4c3eaca01692f853d658)*
 
 
 ## **Introduction**
