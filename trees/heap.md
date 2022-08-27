@@ -44,8 +44,8 @@
 
 ---
 
-1. [Heap Sort](https://www.notion.so/Heap-Sort-23b8ab691f6b4214af65bf268a09256a) 
-2. [Priority Queues](https://www.notion.so/Priority-Queues-1a5ae7fa96fa48baac8fb26112d2aa10) 
+1. [Heap Sort](../sorting/heap_sort.md) 
+2. [Priority Queues](../queues/priority_queues.md) 
 
 # **Design and Implementation**
 
