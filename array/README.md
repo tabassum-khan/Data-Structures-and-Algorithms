@@ -20,38 +20,38 @@
 ## **Design and Implementation**
 
 **1. Declaring Array** - only a reference is created in Java
-```
+```java
 int arr[];
 ```
 
 **2. Defining Array** - allocates memory to array
-```
+```java
 int arr = new int[20];
 ```
 
 **3. Literal Array**
-```
+```java
 int[] intArray = new int[]{ 1,2,3,4,5,6,7,8,9,10 };
 ```
 
 **4. Declaring and Defining 2D Array**
-```
+```java
 int[][] intArray = new int[10][20];
 ```
 
 **5. Cloning Array in Java**
-```
+```java
 int cloneArray[] = arr.clone();
 ```
 
 **6. Looping over an Array**
-```
+```java
 for(int i=0; i<arr.length; i++){
 	System.out.println(arr[i]);
 ```
 
 **7. Removing an Element from an Array**
-```
+```java
 int[] arr = new int[]{1,3,3,4,5};
  ArrayList<Integer> arr_new = new ArrayList<Integer>();
  for (int i : arr){
@@ -61,10 +61,9 @@ int[] arr = new int[]{1,3,3,4,5};
 ```
 
 **8. Deleting an Array**
-```
+```java
 arr = null;
 ```
-
 
 ## Problems to Solve
 >💡 On Notion → [Problems on Array](https://www.notion.so/957105dbc51f437da69690edb7313113?v=839ff4599fd647d1a9b6405f01df84bb)
