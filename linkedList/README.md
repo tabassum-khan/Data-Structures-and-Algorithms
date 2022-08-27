@@ -1,5 +1,5 @@
 # Linked List
->💡 On Notion → [Linked List](https://www.notion.so/Linked-List-eeff5bf5462d4c05896e98af41da2873)
+>💡 On Notion → [Linked List](https://www.notion.so/Linked-List-bc9221877bd44197a47325290b1c6dcb)
 >
 ## Introduction
 
