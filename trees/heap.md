@@ -1,5 +1,5 @@
 # Heap
->💡 On Notion → [Heap](https://www.notion.so/Heap-318dce4174c842f0a8ab23eb34f8d863)
+>💡 On Notion → [Heap](https://www.notion.so/Heap-39734a077ce946ff81eec793f2379ff7)
 ## **Introduction**
 
 - A heap is a specific tree based data structure in which all the nodes of tree are in a specific order. They are hierarchical data structure.
