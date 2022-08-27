@@ -22,7 +22,7 @@
 
 **1. Creation**
 
-```
+```java
 class LinkedList { 
     Node head; 
     class Node { 
@@ -39,7 +39,7 @@ class LinkedList {
 
 **2. Insertion**
 
-```
+```java
 public void push(Node head, int new_data) { 
 //creating new node to store the new data
     Node new_node = new Node(new_data); 
@@ -54,7 +54,7 @@ public void push(Node head, int new_data) {
 
 **3. Deletion**
 
-```
+```java
 public void deleteNode(Node head, int key){
     /*
     Allotting 2 pointers:
@@ -81,7 +81,7 @@ public void deleteNode(Node head, int key){
 
 **4. Traversal**
 
-```
+```java
 public void printList(Node head){ 
     Node tnode = head; 
     while (tnode != null) 
