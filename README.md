@@ -1,4 +1,4 @@
-# Data Structures and Algorithms
+# Data Structures and Algorithms in Java
 
 This is a complete guide to Interview Preparation. This repository entails some of the most frequently asked Data Structures and Algorithms. It contains the theory as well as popular problems from LeetCode and Cracking the Coding Interview Book. 
 
